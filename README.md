@@ -1,5 +1,7 @@
 # Generator Webpack Preact
 
+![alt text](https://img.shields.io/npm/v/generator-webpack-preact.svg?style=flat "NPM Version")
+
 This scaffold creates in seconds for your a professional envoirement to develop with Webpack, TypeScript, Preact and Redux-Zero a website in HTMl, SASS, TS(X) and JS(X).
 
 - You can create more components and choose it in the scaffolding.
