@@ -1,0 +1,28 @@
+{
+    "name": "generator-webpack-preact",
+    "description": "Create a professional project environment with Webpack, TypeScript, Preact and Redux-Zero. (small and compact)",
+    "version": "1.0.0",
+    "main": "generator.js",
+    "scripts": {},
+    "devDependencies": {
+        "@webpack-cli/webpack-scaffold": "^0.1.2",
+        "yeoman-generator": "^3.1.1"
+    },
+    "dependencies": {
+        "preact": "^8.2.5",
+        "redux-zero": "^4.10.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/prod3v3loper/generator-webpack-preact.git"
+    },
+    "keywords": [
+        "yeoman-generator"
+    ],
+    "author": "Samet Tarim aka prod3v3loper",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/prod3v3loper/generator-webpack-preact/issues"
+    },
+    "homepage": "https://tnado.com"
+}
