@@ -7,7 +7,7 @@
 ![alt text](https://img.shields.io/bundlephobia/min/generator-webpack-preact.svg?style=flat "Minified")
 ![alt text](https://img.shields.io/bundlephobia/minzip/generator-webpack-preact.svg?style=flat "Minified & Gzipped")
 
-This scaffold creates in seconds for your a professional envoirement to develop with Webpack, TypeScript, Preact and Redux-Zero a website in HTMl, SASS, TS(X) and JS(X).
+This scaffold creates in seconds for your a professional envoirement to develop with Webpack, TypeScript, Preact and Redux-Zero a website in HTML, SASS, TS(X) and JS(X).
 
 - You can create more components and choose it in the scaffolding.
 - Development Server with Hot Module Replacement (HMR) ready.
@@ -26,7 +26,7 @@ username$ cd /Users/username/scaffold/templates/
 
 Clone the repo or download to the place, you want your templates.
 ```
-templates$ git clone https://github.com/prod3v3loper/generator-webpack-preact.git /Users/username/scaffold/templates/
+templates$ git clone https://github.com/hyp3rly/generator-webpack-preact.git /Users/username/scaffold/templates/
 ```
 
 And now install all Dependencies in package.json for the generator
@@ -90,7 +90,7 @@ counter$ npm run build
 
 # Contribute
 
-Please [file an issue](https://github.com/prod3v3loper/generator-webpack-preact/issues) if you
+Please [file an issue](https://github.com/hyp3rly/generator-webpack-preact/issues) if you
 think something could be improved. Please submit Pull Requests when ever
 possible.
 
@@ -100,4 +100,4 @@ possible.
 
 # License
 
-[MIT](https://github.com/prod3v3loper/generator-webpack-preact/blob/master/LICENSE)
+[MIT](https://github.com/hyp3rly/generator-webpack-preact/blob/master/LICENSE)
