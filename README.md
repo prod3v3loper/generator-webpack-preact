@@ -1,6 +1,11 @@
 # Generator Webpack Preact
 
 ![alt text](https://img.shields.io/npm/v/generator-webpack-preact.svg?style=flat "NPM Version")
+![alt text](https://img.shields.io/npm/l/generator-webpack-preact.svg?style=flat "License")
+![alt text](https://img.shields.io/github/languages/count/hyp3rly/generator-webpack-preact.svg?style=flat "Language Count")
+![alt text](https://img.shields.io/github/commit-activity/m/prod3v3loper/generator-webpack-preact.svg?style=flat "Commit Activity")
+![alt text](https://img.shields.io/bundlephobia/min/generator-webpack-preact.svg?style=flat "Minified")
+![alt text](https://img.shields.io/bundlephobia/minzip/generator-webpack-preact.svg?style=flat "Minified & Gzipped")
 
 This scaffold creates in seconds for your a professional envoirement to develop with Webpack, TypeScript, Preact and Redux-Zero a website in HTMl, SASS, TS(X) and JS(X).
 
