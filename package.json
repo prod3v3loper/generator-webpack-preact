@@ -1,7 +1,7 @@
 {
     "name": "generator-webpack-preact",
     "description": "Create a professional project environment with Webpack, TypeScript, Preact and Redux-Zero. (small and compact)",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "main": "generator.js",
     "scripts": {},
     "devDependencies": {
@@ -14,7 +14,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/hyp3rly/generator-webpack-preact.git"
+        "url": "https://github.com/prod3v3loper/generator-webpack-preact.git"
     },
     "keywords": [
         "yeoman-generator",
@@ -28,7 +28,7 @@
     "author": "Samet Tarim aka prod3v3loper",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/hyp3rly/generator-webpack-preact/issues"
+        "url": "https://github.com/prod3v3loper/generator-webpack-preact/issues"
     },
-    "homepage": "https://github.com/hyp3rly/generator-webpack-preact.git"
+    "homepage": "https://github.com/prod3v3loper/generator-webpack-preact.git"
 }

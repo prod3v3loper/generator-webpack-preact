@@ -26,7 +26,7 @@ username$ cd /Users/username/scaffold/templates/
 
 Clone the repo or download to the place, you want your templates.
 ```
-templates$ git clone https://github.com/hyp3rly/generator-webpack-preact.git /Users/username/scaffold/templates/
+templates$ git clone https://github.com/prod3v3loper/generator-webpack-preact.git /Users/username/scaffold/templates/
 ```
 
 And now install all Dependencies in package.json for the generator
@@ -43,7 +43,7 @@ Switch to the projects folder.
 templates$ cd /Users/username/projects/
 ```
 
-Start the scaffolding from our scaffold templates folder with the template `Scaffer`
+Start the scaffolding from our scaffold templates folder with the template `generator-webpack-preact`
 ```
 projects$ webpack init /Users/username/scaffold/templates/generator-webpack-preact
 ```
@@ -90,7 +90,7 @@ counter$ npm run build:release
 
 # Contribute
 
-Please [file an issue](https://github.com/hyp3rly/generator-webpack-preact/issues) if you
+Please [file an issue](https://github.com/prod3v3loper/generator-webpack-preact/issues) if you
 think something could be improved. Please submit Pull Requests when ever
 possible.
 
@@ -100,4 +100,4 @@ possible.
 
 # License
 
-[MIT](https://github.com/hyp3rly/generator-webpack-preact/blob/master/LICENSE)
+[MIT](https://github.com/prod3v3loper/generator-webpack-preact/blob/master/LICENSE)
