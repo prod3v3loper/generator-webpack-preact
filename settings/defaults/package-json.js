@@ -16,22 +16,7 @@ module.exports = function createPackageJson(answer) {
         "license": answer.license ? ("'" + answer.author + "'") : "MIT",
         // @see https://docs.npmjs.com/files/package.json#people-fields-author-contributors
         // "contributors": [{
-        //         name: "Robertos Petsch",
-        //         email: "",
-        //         url: ""
-        //     },
-        //     {
-        //         name: "Bassel Matrimawi",
-        //         email: "",
-        //         url: ""
-        //     },
-        //     {
         //         name: "Samet Tarim",
-        //         email: "",
-        //         url: ""
-        //     },
-        //     {
-        //         name: "Leonardo Paredes",
         //         email: "",
         //         url: ""
         //     }
