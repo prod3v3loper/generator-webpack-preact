@@ -7,13 +7,13 @@
 ![alt text](https://img.shields.io/bundlephobia/min/generator-webpack-preact.svg?style=flat "Minified")
 ![alt text](https://img.shields.io/bundlephobia/minzip/generator-webpack-preact.svg?style=flat "Minified & Gzipped")
 
-This scaffold creates in seconds for your a professional envoirement to develop with Webpack, TypeScript, Preact and Redux-Zero a website in HTML, SASS, TS(X) and JS(X).
+This scaffold creates in seconds for you a professional envoirement to develop with a package of [Webpack](https://webpack.js.org/), [TypeScript](https://www.typescriptlang.org/), [Preact](https://preactjs.com/) and [Redux-Zero](https://matheusml1.gitbooks.io/redux-zero-docs/content/) a application in HTML, SASS, TS(X) and JS(X).
 
-- You can create more components and choose it in the scaffolding.
 - Development Server with Hot Module Replacement (HMR) ready.
 - Configs was splited to development and production
 - Plugins inside and ready to add more
 - Install packages after scaffolding ready
+- You can create more components and choose it in the scaffolding.
 
 # Install
 
