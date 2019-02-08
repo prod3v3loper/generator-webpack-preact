@@ -3,7 +3,7 @@
 ![alt text](https://img.shields.io/npm/v/generator-webpack-preact.svg?style=flat "NPM Version")
 ![alt text](https://img.shields.io/npm/l/generator-webpack-preact.svg?style=flat "License")
 ![alt text](https://img.shields.io/github/languages/count/hyp3rly/generator-webpack-preact.svg?style=flat "Language Count")
-![alt text](https://img.shields.io/github/commit-activity/m/prod3v3loper/generator-webpack-preact.svg?style=flat "Commit Activity")
+![alt text](https://img.shields.io/github/commit-activity/m/hyp3rly/generator-webpack-preact.svg?style=flat "Commit Activity")
 ![alt text](https://img.shields.io/bundlephobia/min/generator-webpack-preact.svg?style=flat "Minified")
 ![alt text](https://img.shields.io/bundlephobia/minzip/generator-webpack-preact.svg?style=flat "Minified & Gzipped")
 
@@ -81,11 +81,11 @@ projects$ cd /Users/username/projects/counter
 
 This command start the Server with the hotmodule.
 ```
-counter$ npm run server
+counter$ npm run build:dev
 ```
 This command build the dist folder with the end product.
 ```
-counter$ npm run build
+counter$ npm run build:release
 ```
 
 # Contribute
