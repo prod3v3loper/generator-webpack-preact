@@ -20,13 +20,18 @@
     },
     "keywords": [
         "yeoman-generator",
+        "yeoman",
+        "generator",
         "webpack",
+        "webpack-init",
+        "webpack-cli",
+        "webpack-scaffold",
         "typescript",
         "preact",
         "redux-zero",
         "dev-server",
-        "HMR",
-        "Scaffold"
+        "hmr",
+        "scaffold"
     ],
     "author": "Samet Tarim aka prod3v3loper",
     "license": "MIT",
