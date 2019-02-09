@@ -6,10 +6,10 @@ const createProTsconfig = require( './settings/defaults/ts-pro-json' );
 // Yeoman
 const Generator = require( 'yeoman-generator' );
 // Helper for create empty folders
-const mkdirp = require( 'mkdirp' ); // Helper for create empty folders
+// const mkdirp = require( 'mkdirp' );
 // Scaffold
-const List = require( '@webpack-cli/webpack-scaffold' ).List;
-const Input = require( '@webpack-cli/webpack-scaffold' ).Input;
+// const List = require( '@webpack-cli/webpack-scaffold' ).List;
+// const Input = require( '@webpack-cli/webpack-scaffold' ).Input;
 // Default abstracted configs
 const createCommonConfig = require( './settings/configs/common' );
 const createProConfig = require( './settings/configs/pro' );
@@ -104,7 +104,7 @@ module.exports = class WebpackGenerator extends Generator {
             message: 'Components you want to use? (type comma seperated)',
             default: ['counter']
         },
-        // List('device', 'For Device? (use arrow keys)', ['Online', 'Tablet', 'Mobile', 'xDigital']),
+        // List('device', 'For Device? (use arrow keys)', ['Online', 'Tablet', 'Mobile']),
         {
             type: 'confirm',
             name: 'npminstall',
