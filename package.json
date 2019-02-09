@@ -7,11 +7,10 @@
     "files": [
         "app"
     ],
-    "devDependencies": {
-        "@webpack-cli/webpack-scaffold": "^0.1.2",
-        "yeoman-generator": "^3.1.1"
-    },
+    "devDependencies": {},
     "dependencies": {
+        "@webpack-cli/webpack-scaffold": "^0.1.2",
+        "yeoman-generator": "^3.1.1",
         "preact": "^8.2.5",
         "redux-zero": "^4.10.0"
     },
