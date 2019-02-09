@@ -18,7 +18,27 @@ This scaffold creates in seconds for you a professional envoirement to develop w
 
 # Install with npm and use with Yeoman
 
-You can use yo (Yeoman) to install the scaffold an use.
+You can use yo ([Yeoman](https://yeoman.io/)) to install the scaffold and start.
+
+```
+npm i generator-webpack-preact
+```
+```
+yo
+```
+If promt a call
+```
+? 'Allo Tarim,! What would you like to do? (Use arrow keys)
+  Run a generator
+> webpack-preact
+```
+or directly
+```
+yo webpack-preact
+```
+
+OR Global
+
 ```
 sudo npm i -g generator-webpack-preact
 ```
@@ -32,6 +52,11 @@ If promt a call
   Run a generator
 > webpack-preact
 ```
+or directly
+```
+yo webpack-preact
+```
+
 Enter and create your project
 
 # Install with Git and use with Webpack
