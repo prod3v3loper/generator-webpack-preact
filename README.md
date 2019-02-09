@@ -117,20 +117,22 @@ After answer all questions start the create
    create webpack.pro.js
 ```
 
-# Build
+# Usage
 
-Switch to the new project folder we have created.
+Now we can run and see the Magic :)
+
+Switch to the new project folder we have created. (You typed in the prompt default **newsletter**)
 ```
-projects$ cd /Users/username/projects/counter
+projects$ cd /Users/username/projects/customer/year/newsletter
 ```
 
 This command start the Server with the hotmodule.
 ```
-counter$ npm run build:dev
+newsletter$ npm run build:dev
 ```
 This command build the dist folder with the end product.
 ```
-counter$ npm run build:release
+newsletter$ npm run build:release
 ```
 
 # Contribute
