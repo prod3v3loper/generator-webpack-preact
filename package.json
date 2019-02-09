@@ -1,9 +1,12 @@
 {
     "name": "generator-webpack-preact",
     "description": "Create a professional project environment with Webpack, TypeScript, Preact and Redux-Zero. (small and compact)",
-    "version": "1.0.6",
-    "main": "generator.js",
+    "version": "1.0.7",
+    "main": "./app/index.js",
     "scripts": {},
+    "files": [
+        "app"
+    ],
     "devDependencies": {
         "@webpack-cli/webpack-scaffold": "^0.1.2",
         "yeoman-generator": "^3.1.1"

@@ -1,19 +1,19 @@
 // DEFAULTS
-const createGLOBALSjson = require('./settings/defaults/global');
-const createPackageJson = require('./settings/defaults/package-json');
-const createDevTsconfig = require('./settings/defaults/ts-dev-json');
-const createProTsconfig = require('./settings/defaults/ts-pro-json');
+const createGLOBALSjson = require( './settings/defaults/global' );
+const createPackageJson = require( './settings/defaults/package-json' );
+const createDevTsconfig = require( './settings/defaults/ts-dev-json' );
+const createProTsconfig = require( './settings/defaults/ts-pro-json' );
 // Yeoman
-const Generator = require('yeoman-generator');
+const Generator = require( 'yeoman-generator' );
 // Helper for create empty folders
-const mkdirp = require('mkdirp'); // Helper for create empty folders
+const mkdirp = require( 'mkdirp' ); // Helper for create empty folders
 // Scaffold
-const List = require('@webpack-cli/webpack-scaffold').List;
-const Input = require('@webpack-cli/webpack-scaffold').Input;
+const List = require( '@webpack-cli/webpack-scaffold' ).List;
+const Input = require( '@webpack-cli/webpack-scaffold' ).Input;
 // Default abstracted configs
-const createCommonConfig = require('./settings/configs/common');
-const createProConfig = require('./settings/configs/pro');
-const createDevConfig = require('./settings/configs/dev');
+const createCommonConfig = require( './settings/configs/common' );
+const createProConfig = require( './settings/configs/pro' );
+const createDevConfig = require( './settings/configs/dev' );
 
 /**
  * Webpack Scaffolding by prod3v3loper
@@ -26,6 +26,7 @@ const createDevConfig = require('./settings/configs/dev');
  * @package     MELABUAI
  * @subpackage  Webpack Scaffold
  * 
+ * @see         https://yeoman.io/authoring/index.html
  * @see         https://github.com/webpack/webpack-cli/blob/master/SCAFFOLDING.md
  * @see         https://github.com/evenstensberg/webpack-scaffold-demo
  * @see         https://yeoman.io/authoring/dependencies.html
@@ -39,9 +40,9 @@ module.exports = class WebpackGenerator extends Generator {
      * @param {*} args 
      * @param {*} opts 
      */
-    constructor(args, opts) {
+    constructor( args, opts ) {
 
-        super(args, opts);
+        super( args, opts );
 
         this.answers = {};
         this.settings = {
@@ -54,13 +55,19 @@ module.exports = class WebpackGenerator extends Generator {
             // This property says set name webpack."config".js
             // We create 3 config files webpack.config.js, webpack.dev.js and webpack.pro.js
             config: {
-                webpackOptions: {}
+                topScope: [],
+                webpackOptions: {},
+                configName: ''
             },
             dev: {
-                webpackOptions: {}
+                topScope: [],
+                webpackOptions: {},
+                configName: ''
             },
             pro: {
-                webpackOptions: {}
+                topScope: [],
+                webpackOptions: {},
+                configName: ''
             }
         }
     }
@@ -76,35 +83,35 @@ module.exports = class WebpackGenerator extends Generator {
         // this.log( this );
 
         // Chain the questions
-        this.answers = await this.prompt([{
-                type: 'input',
-                name: 'name',
-                message: 'Customer name?',
-                default: this.appname.replace(/\s/g, '-').toLocaleLowerCase() // Default to current folder name
-            }, {
-                type: 'input',
-                name: 'year',
-                message: 'Project year?',
-                default: '2019'
-            }, {
-                type: 'input',
-                name: 'project',
-                message: 'Project name?',
-                default: 'newsletter'
-            }, {
-                type: 'input',
-                name: 'components',
-                message: 'Components you want to use? (type comma seperated)',
-                default: ['counter']
-            },
-            // List('device', 'For Device? (use arrow keys)', ['Online', 'Tablet', 'Mobile', 'xDigital']),
-            {
-                type: 'confirm',
-                name: 'npminstall',
-                message: 'Want you install all dependencies?',
-                default: 'Y/n'
-            }
-        ]);
+        this.answers = await this.prompt( [{
+            type: 'input',
+            name: 'name',
+            message: 'Customer name?',
+            default: this.appname.replace( /\s/g, '-' ).toLocaleLowerCase() // Default to current folder name
+        }, {
+            type: 'input',
+            name: 'year',
+            message: 'Project year?',
+            default: '2019'
+        }, {
+            type: 'input',
+            name: 'project',
+            message: 'Project name?',
+            default: 'newsletter'
+        }, {
+            type: 'input',
+            name: 'components',
+            message: 'Components you want to use? (type comma seperated)',
+            default: ['counter']
+        },
+        // List('device', 'For Device? (use arrow keys)', ['Online', 'Tablet', 'Mobile', 'xDigital']),
+        {
+            type: 'confirm',
+            name: 'npminstall',
+            message: 'Want you install all dependencies?',
+            default: 'Y/n'
+        }
+        ] );
 
         this.settings.install = this.answers.npminstall;
 
@@ -114,7 +121,7 @@ module.exports = class WebpackGenerator extends Generator {
             'const CleanWebpackPlugin = require("clean-webpack-plugin")',
             'const HtmlWebpackPlugin = require("html-webpack-plugin")'
         ];
-        this.options.env.configuration.config.webpackOptions = createCommonConfig(this.answers);
+        this.options.env.configuration.config.webpackOptions = createCommonConfig( this.answers );
         this.options.env.configuration.config.configName = 'config';
 
         // DEV
@@ -124,7 +131,7 @@ module.exports = class WebpackGenerator extends Generator {
             'const merge = require("webpack-merge")',
             'const common = require("./webpack.config.js")'
         ];
-        this.options.env.configuration.dev.webpackOptions = createDevConfig(this.answers);
+        this.options.env.configuration.dev.webpackOptions = createDevConfig( this.answers );
         this.options.env.configuration.dev.merge = 'common';
         this.options.env.configuration.dev.configName = 'dev';
 
@@ -134,7 +141,7 @@ module.exports = class WebpackGenerator extends Generator {
             'const merge = require("webpack-merge")',
             'const common = require("./webpack.config.js")'
         ];
-        this.options.env.configuration.pro.webpackOptions = createProConfig(this.answers);
+        this.options.env.configuration.pro.webpackOptions = createProConfig( this.answers );
         this.options.env.configuration.pro.merge = 'common';
         this.options.env.configuration.pro.configName = 'pro';
 
@@ -148,7 +155,7 @@ module.exports = class WebpackGenerator extends Generator {
     paths() {
 
         // Set root folder to destination
-        this.destinationRoot(this.settings.root);
+        this.destinationRoot( this.settings.root );
     }
 
     /**
@@ -161,48 +168,49 @@ module.exports = class WebpackGenerator extends Generator {
 
         // Copy tpls from scaffold to project
         this.fs.copyTpl(
-            this.templatePath('sources'),
-            this.destinationPath('src')
+            this.templatePath( 'sources' ),
+            this.destinationPath( 'src' )
         );
+
         this.fs.copyTpl(
-            this.templatePath('public'),
-            this.destinationPath('public')
+            this.templatePath( 'public' ),
+            this.destinationPath( 'public' )
         );
 
         // package.json
-        this.fs.extendJSON(this.destinationPath('package.json'), createPackageJson(this.answers));
+        this.fs.extendJSON( this.destinationPath( 'package.json' ), createPackageJson( this.answers ) );
 
         // global.config.json
-        this.fs.extendJSON(this.destinationPath('global.config.json'), createGLOBALSjson(this.answers));
+        this.fs.extendJSON( this.destinationPath( 'global.config.json' ), createGLOBALSjson( this.answers ) );
 
         // tsconfig.json
-        this.fs.extendJSON(this.destinationPath('tsconfig.dev.json'), createDevTsconfig(this.answers));
-        this.fs.extendJSON(this.destinationPath('tsconfig.pro.json'), createProTsconfig(this.answers));
+        this.fs.extendJSON( this.destinationPath( 'tsconfig.dev.json' ), createDevTsconfig( this.answers ) );
+        this.fs.extendJSON( this.destinationPath( 'tsconfig.pro.json' ), createProTsconfig( this.answers ) );
 
         // Used components
-        if (this.answers.components && this.answers.components.indexOf(', ') > -1) {
+        if ( this.answers.components && this.answers.components.indexOf( ', ' ) > -1 ) {
             // Split components
-            let array = this.answers.components.trim().split(/\s*,\s*/);
-            for (let i = 0; i < array.length; i++) {
+            let array = this.answers.components.trim().split( /\s*,\s*/ );
+            for ( let i = 0; i < array.length; i++ ) {
                 // Copy tpls
                 this.fs.copyTpl(
-                    this.templatePath('components/' + array[i]),
-                    this.destinationPath('src/components/' + array[i])
+                    this.templatePath( 'components/' + array[i] ),
+                    this.destinationPath( 'src/components/' + array[i] )
                 );
             }
         } else {
             let arr = this.answers.components;
-            for (let i = 0; i < arr.length; i++) {
+            for ( let i = 0; i < arr.length; i++ ) {
                 // Copy tpls
                 this.fs.copyTpl(
-                    this.templatePath('components/' + arr[i]),
-                    this.destinationPath('src/components/' + arr[i])
+                    this.templatePath( 'components/' + arr[i] ),
+                    this.destinationPath( 'src/components/' + arr[i] )
                 );
             }
         }
 
         // webpack.config.js
-        this.config.set('configuration', this.options.env.configuration);
+        this.config.set( 'configuration', this.options.env.configuration );
     }
 
     /**
@@ -210,7 +218,7 @@ module.exports = class WebpackGenerator extends Generator {
      */
     install() {
 
-        if (this.settings.install) {
+        if ( this.settings.install ) {
             this.npmInstall();
         }
     }
