@@ -1,7 +1,7 @@
 {
     "name": "generator-webpack-preact",
     "description": "Create a professional project environment with Webpack, TypeScript, Preact and Redux-Zero. (small and compact)",
-    "version": "1.0.7",
+    "version": "1.0.8",
     "main": "./app/index.js",
     "scripts": {},
     "files": [

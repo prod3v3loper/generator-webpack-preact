@@ -1,11 +1,12 @@
 # Generator Webpack Preact
 
-![alt text](https://img.shields.io/npm/v/generator-webpack-preact.svg?style=flat "NPM Version")
-![alt text](https://img.shields.io/npm/l/generator-webpack-preact.svg?style=flat "License")
-![alt text](https://img.shields.io/github/languages/count/hyp3rly/generator-webpack-preact.svg?style=flat "Language Count")
-![alt text](https://img.shields.io/github/commit-activity/m/hyp3rly/generator-webpack-preact.svg?style=flat "Commit Activity")
-![alt text](https://img.shields.io/bundlephobia/min/generator-webpack-preact.svg?style=flat "Minified")
-![alt text](https://img.shields.io/bundlephobia/minzip/generator-webpack-preact.svg?style=flat "Minified & Gzipped")
+![NPM Version](https://img.shields.io/npm/v/generator-webpack-preact.svg?style=flat "NPM Version")
+![Languages](https://img.shields.io/github/languages/count/hyp3rly/generator-webpack-preact.svg?style=flat "Language Count")
+![Commits](https://img.shields.io/github/commit-activity/m/hyp3rly/generator-webpack-preact.svg?style=flat "Commit Activity")
+![Minified](https://img.shields.io/bundlephobia/min/generator-webpack-preact.svg?style=flat "Minified")
+![Gzipped](https://img.shields.io/bundlephobia/minzip/generator-webpack-preact.svg?style=flat "Minified & Gzipped")
+![Donwloads](https://img.shields.io/npm/dw/generator-webpack-preact.svg?style=flat "NPM Donwloads")
+![License](https://img.shields.io/npm/l/generator-webpack-preact.svg?style=flat "License")
 
 This scaffold creates in seconds for you a professional envoirement to develop with a package of [Webpack](https://webpack.js.org/), [TypeScript](https://www.typescriptlang.org/), [Preact](https://preactjs.com/) and [Redux-Zero](https://matheusml1.gitbooks.io/redux-zero-docs/content/) a application in HTML, SASS, TS(X) and JS(X).
 
@@ -70,7 +71,11 @@ After answer all questions start the create
    create src/components/counter/actions.js
    create src/components/counter/counter.js
    create src/components/counter/store.js
+
+Congratulations! Your new webpack configuration file has been created!
 ```
+
+> The `npm` installation is currently not possible, since we run with webpack init, it did not create the webpack configs with `yo`.
 
 # Build
 
