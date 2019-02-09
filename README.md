@@ -75,7 +75,7 @@ After answer all questions start the create
 Congratulations! Your new webpack configuration file has been created!
 ```
 
-> The `npm` installation is currently not possible, since we run with webpack init, it did not create the webpack configs with `yo`.
+> The `npm` installation is currently not possible, since we run with `webpack init`, it did not create the webpack configs with `yo`.
 
 # Build
 
