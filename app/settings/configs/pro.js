@@ -1,11 +1,10 @@
 /**
  * webpack.pro.js
  */
-
 // Get the pro plugins
 // const proPlugins = require('../plugins/pro');
 
-module.exports = function createProConfig(answer) {
+module.exports = function createProConfig( answer ) {
 
     let proConf = {
         mode: '"production"',

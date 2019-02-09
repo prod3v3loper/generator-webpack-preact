@@ -119,6 +119,73 @@ After answer all questions start the create
    create webpack.pro.js
 ```
 
+# What this do
+
+The following structure is created after the prompt input. With the typed data.
+
+```
+Projects
+
+├── customer/ (project name)
+|   └── year/ (2019)
+|       └── project/ (newsletter)
+|           └── public/
+|           |   └── index.html
+|           └── src/
+|               └── components/
+|               |   └── counter/
+|               |       └── actions.js
+|               |       └── counter.js
+|               |       └── store.js
+|               └── scss/
+|               |   └── style.scss
+|               └── index.tsx
+```
+
+But the idea behind it is to collect and manage all our projects in our projects folder. So every time we call the generator in our projects folder and create a new project with customer name, it will be added to the others.
+
+```
+Projects
+
+├── customer/ (project name)
+|   └── year/ (2019)
+|       └── project/ (newsletter)
+|           └── public/
+|           |   └── index.html
+|           └── src/
+|               └── components/
+|               |   └── counter/
+|               |       └── actions.js
+|               |       └── counter.js
+|               |       └── store.js
+|               └── scss/
+|               |   └── style.scss
+|               └── index.tsx
+|
+├── another-customer/
+|   └── 2018/
+|   |   └── project1/
+|   |   |   └── ...
+|   |   └── project2/
+|   |       └── ...
+|   └── 2019/
+|       └── project1/
+|       |   └── ...
+|       └── project2/
+|           └── public/
+|           |   └── index.html
+|           └── src/
+|               └── components/
+|               |   └── counter/
+|               |       └── actions.js
+|               |       └── counter.js
+|               |       └── store.js
+|               └── scss/
+|               |   └── style.scss
+|               └── index.tsx
+
+```
+
 # Usage
 
 Now we can run and see the Magic :)

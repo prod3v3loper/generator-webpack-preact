@@ -4,6 +4,7 @@
  * @see https://www.typescriptlang.org/docs/handbook/tsconfig-json.html
  * @see https://www.typescriptlang.org/docs/handbook/compiler-options.html
  */
+
 module.exports = function createTsconfigJson( answer ) {
 
     let tsJsonConf = {

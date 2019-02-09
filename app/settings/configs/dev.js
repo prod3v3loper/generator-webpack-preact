@@ -1,11 +1,10 @@
 /**
  * webpack.dev.js
  */
-
 // Get the dev plugins
-const devPlugins = require('../plugins/dev');
+const devPlugins = require( '../plugins/dev' );
 
-module.exports = function createDevConfig(answer) {
+module.exports = function createDevConfig( answer ) {
 
     let devConf = {
         mode: '"development"',
