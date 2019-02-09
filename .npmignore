@@ -1,4 +1,6 @@
 dist
-package-lock.json
 .gitignore
+.github
+package-lock.json
 _config.yml
+.travis.yml
