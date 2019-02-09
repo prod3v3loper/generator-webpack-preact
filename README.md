@@ -37,7 +37,9 @@ or directly
 yo webpack-preact
 ```
 
-OR Global
+Enter and create your project
+
+## Or install the generator global
 
 ```
 sudo npm i -g generator-webpack-preact
