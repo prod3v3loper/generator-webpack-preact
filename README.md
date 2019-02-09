@@ -16,10 +16,25 @@ This scaffold creates in seconds for you a professional envoirement to develop w
 - Install packages after scaffolding ready
 - You can create more components and choose it in the scaffolding.
 
-# Install
+# Install with npm and use with Yeoman
 
-You can download, open in your editor and start it directly.
 You can use yo (Yeoman) to install the scaffold an use.
+```
+sudo npm i -g generator-webpack-preact
+```
+Type password and now run in your project folder
+```
+yo
+```
+If promt a call
+```
+? 'Allo Tarim,! What would you like to do? (Use arrow keys)
+  Run a generator
+> webpack-preact
+```
+Enter and create your project
+
+# Install with Git and use with Webpack
 
 Or create a Scaffold Templates folder and open your Terminal, to switch in the folder.
 ```
@@ -36,8 +51,6 @@ And now install all Dependencies in package.json for the generator
 templates$ npm install
 ```
 
-# Usage
-
 Now create your main Projects folder. This folder contains all projects that we then create.
 
 Switch to the projects folder.
@@ -49,6 +62,8 @@ Start the scaffolding from our scaffold templates folder with the template `gene
 ```
 projects$ webpack init /Users/username/scaffold/templates/generator-webpack-preact
 ```
+
+# Promt for the two solutions
 
 And we become a promt ;)
 
@@ -72,11 +87,10 @@ After answer all questions start the create
    create src/components/counter/actions.js
    create src/components/counter/counter.js
    create src/components/counter/store.js
-
-Congratulations! Your new webpack configuration file has been created!
+   create webpack.config.js
+   create webpack.dev.js
+   create webpack.pro.js
 ```
-
-> The `npm` installation is currently not possible, since we run with `webpack init`, it did not create the webpack configs with `yo`.
 
 # Build
 
