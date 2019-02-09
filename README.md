@@ -19,6 +19,7 @@ This scaffold creates in seconds for you a professional envoirement to develop w
 # Install
 
 You can download, open in your editor and start it directly.
+You can use yo (Yeoman) to install the scaffold an use.
 
 Or create a Scaffold Templates folder and open your Terminal, to switch in the folder.
 ```
