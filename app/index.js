@@ -210,6 +210,11 @@ module.exports = class WebpackGenerator extends Generator {
         }
 
         // webpack.config.js
+        this.fs.copyTpl(
+            this.templatePath( 'configs' ),
+            this.destinationPath( './' )
+        );
+
         this.config.set( 'configuration', this.options.env.configuration );
     }
 
