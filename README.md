@@ -18,13 +18,19 @@ This scaffold creates in seconds for you a professional envoirement to develop w
 
 # Install with npm and use with Yeoman
 
-You can use yo ([Yeoman](https://yeoman.io/)) to install the scaffold and start.
+Install [Node.js](https://nodejs.org/en/) ([npm](https://www.npmjs.com) is inside) to use the Node Package Manager.
+You can use yo ([Yeoman](https://yeoman.io/)) to install the scaffold and start with it.
+
+Switch to the projects folder.
+```
+username$ cd /Users/username/projects/
+```
 
 ```
-npm i generator-webpack-preact
+projects$ npm i generator-webpack-preact
 ```
 ```
-yo
+projects$ yo
 ```
 If promt a call
 ```
@@ -34,7 +40,7 @@ If promt a call
 ```
 or directly
 ```
-yo webpack-preact
+projects$ yo webpack-preact
 ```
 
 Enter and create your project
@@ -42,11 +48,11 @@ Enter and create your project
 ## Or install the generator global
 
 ```
-sudo npm i -g generator-webpack-preact
+projects$ sudo npm i -g generator-webpack-preact
 ```
 Type password and now run in your project folder
 ```
-yo
+projects$ yo
 ```
 If promt a call
 ```
@@ -54,7 +60,7 @@ If promt a call
   Run a generator
 > webpack-preact
 ```
-or directly
+projects$ or directly
 ```
 yo webpack-preact
 ```
@@ -63,7 +69,8 @@ Enter and create your project
 
 # Install with Git and use with Webpack
 
-Or create a Scaffold Templates folder and open your Terminal, to switch in the folder.
+Install [Git](https://git-scm.com/) to clone with it.
+Create a Scaffold Templates folder and open your Terminal, to switch in the folder.
 ```
 username$ cd /Users/username/scaffold/templates/
 ```
@@ -85,7 +92,7 @@ Switch to the projects folder.
 templates$ cd /Users/username/projects/
 ```
 
-Start the scaffolding from our scaffold templates folder with the template `generator-webpack-preact`
+Start the scaffolding with the [webpack-cli init](https://github.com/webpack/webpack-cli) from our scaffold templates folder with the template `generator-webpack-preact`
 ```
 projects$ webpack init /Users/username/scaffold/templates/generator-webpack-preact
 ```
@@ -188,7 +195,7 @@ Projects
 
 # Usage
 
-Now we can run and see the Magic :)
+Now run and see the Magic :)
 
 Switch to the new project folder we have created. (You typed in the prompt default **newsletter**)
 ```
