@@ -30,8 +30,8 @@ module.exports = function createPackageJson( answer ) {
             "url": ( answer.repo ? ( "'" + answer.repo + "'" ) : "https://github.com/prod3v3loper/webpack-scaffold-generate.git" )
         },
         "scripts": {
-            "build:dev": "webpack-dev-server --open --config webpack.dev.js",
-            "build:release": "webpack --config webpack.pro.js"
+            "dev": "webpack-dev-server --open --config webpack.dev.js",
+            "release": "webpack --config webpack.pro.js"
         },
         "devDependencies": {
             "webpack": "^4.29.0",

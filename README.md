@@ -239,11 +239,24 @@ newsletter$ npm install
 
 This command start the Server with the hotmodule.
 ```
-newsletter$ npm run build:dev
+newsletter$ npm run dev
 ```
 This command build the dist folder with the end product.
 ```
-newsletter$ npm run build:release
+newsletter$ npm run release
+```
+
+# Uninstall
+
+## NPM
+
+Local
+```
+projects$ npm uninstall generator-webpack-preact
+```
+Global
+```
+projects$ npm uninstall -g generator-webpack-preact
 ```
 
 # Contribute
