@@ -16,10 +16,10 @@ module.exports = function createProConfig( answer ) {
         // plugins: proPlugins(),
         module: {
             rules: [{
-                test: '/\\.(tsx?|jsx?)?$/',
+                test: "/\\.(tsx?|jsx?)?$/",
                 loader: "'ts-loader'",
                 // include: 'path.resolve(__dirname, "src")',
-                exclude: '/node_modules/',
+                exclude: "/node_modules/",
                 // Load ts pro config
                 options: {
                     configFile: "'tsconfig.pro.json'"

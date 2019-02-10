@@ -13,7 +13,7 @@ module.exports = function createComConfig( answer ) {
         // path in single quotes to work
         output: {
             filename: "'[name].bundle.js'",
-            path: 'path.resolve(__dirname, "./dist")',
+            path: "path.resolve(__dirname, \"./dist\")",
         },
 
         resolve: {
@@ -24,7 +24,7 @@ module.exports = function createComConfig( answer ) {
 
         module: {
             rules: [{
-                test: '/\\.s?css$/',
+                test: "/\\.s?css$/",
                 use: [
                     // Chain the rules to seperate
                     // If sass not exists get css

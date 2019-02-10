@@ -21,10 +21,10 @@ module.exports = function createDevConfig( answer ) {
         plugins: devPlugins(),
         module: {
             rules: [{
-                test: '/\\.(tsx?|jsx?)$/',
+                test: "/\\.(tsx?|jsx?)$/",
                 loader: "'ts-loader'",
                 // include: 'path.resolve(__dirname, "src")',
-                exclude: '/node_modules/',
+                exclude: "/node_modules/",
                 // Load ts dev config
                 options: {
                     configFile: "'tsconfig.dev.json'"
