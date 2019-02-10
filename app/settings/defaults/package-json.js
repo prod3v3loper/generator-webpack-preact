@@ -45,7 +45,13 @@ module.exports = function createPackageJson( answer ) {
             "ts-loader": "^5.3.3",
             "typescript": "^3.2.2",
             "clean-webpack-plugin": "^0.1.19",
-            "html-webpack-plugin": "^3.2.0"
+            "html-webpack-plugin": "^3.2.0",
+            "@babel/core": "^7.2.2",
+            "@babel/plugin-proposal-class-properties": "^7.3.0",
+            "@babel/plugin-proposal-object-rest-spread": "^7.3.2",
+            "@babel/preset-env": "^7.3.1",
+            "@babel/preset-typescript": "^7.1.0",
+            "babel-loader": "^8.0.5"
         },
         "dependencies": {
             "preact": "^8.2.5",

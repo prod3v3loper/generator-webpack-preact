@@ -1,7 +1,7 @@
 {
     "name": "generator-webpack-preact",
-    "description": "Create professional projects and manage in environment with Webpack, TypeScript, HTML, SASS, Preact and Redux-Zero. (small and compact)",
-    "version": "1.1.8",
+    "description": "Create professional projects and manage in environment with Webpack, TypeScript, Preact, Redux-Zero and Babel. HTML (5), SASS (CSS), TS (X) and JS (X). Small and compact solution.",
+    "version": "1.1.9",
     "main": "./app/index.js",
     "scripts": {},
     "files": [
@@ -30,7 +30,9 @@
         "typescript",
         "preact",
         "redux-zero",
-        "hmr"
+        "babel",
+        "hmr",
+        "es6"
     ],
     "author": "Samet Tarim aka prod3v3loper",
     "license": "MIT",

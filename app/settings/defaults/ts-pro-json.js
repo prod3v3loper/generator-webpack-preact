@@ -13,11 +13,11 @@ module.exports = function createTsconfigJson(answer) {
             "strict": true,
             /* Enable all strict type-checking options. */
             // "allowSyntheticDefaultImports": true,
-            "sourceMap": true,
+            "sourceMap": false,
             "noImplicitAny": false,
-            "removeComments": false,
+            "removeComments": true,
             "preserveConstEnums": true,
-            "target": "ES5",
+            "target": "ES6",
             /* Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017', or 'ESNEXT'. */
             "module": "commonjs",
             /* Specify module code generation: 'commonjs', 'amd', 'system', 'umd', 'es2015', or 'ESNext'. */

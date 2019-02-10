@@ -17,7 +17,7 @@ module.exports = function createTsconfigJson(answer) {
             "noImplicitAny": false,
             "removeComments": false,
             "preserveConstEnums": true,
-            "target": "ES5",
+            "target": "ES6",
             /* Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017', or 'ESNEXT'. */
             "module": "commonjs",
             /* Specify module code generation: 'commonjs', 'amd', 'system', 'umd', 'es2015', or 'ESNext'. */

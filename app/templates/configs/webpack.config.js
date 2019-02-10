@@ -20,7 +20,11 @@ module.exports = {
 		new HtmlWebpackPlugin({
 			title: "WebPack - Preact",
 			template: "./public/index.html",
-			inlineSource: ".(js|css)$"
+			inlineSource: ".(js|css)$",
+			minify: {
+				collapseWhitespace: true,
+				removeComments: true
+			}
 		})
 	],
 

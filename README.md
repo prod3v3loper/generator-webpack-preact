@@ -15,9 +15,15 @@
 
 [Github Theme Page](https://prod3v3loper.github.io/generator-webpack-preact/)
 
-This scaffold creates in seconds for you a professional environment to develop with a package of [Webpack](https://webpack.js.org/) (and loaders), [TypeScript](https://github.com/Microsoft/TypeScript), [Preact](https://github.com/developit/preact) and [Redux-Zero](https://github.com/redux-zero/redux-zero) a application in HTML, SASS, TS(X) and JS(X).
+This scaffold creates in seconds for you a professional environment to develop with a package of [Webpack](https://webpack.js.org/), [TypeScript](https://github.com/Microsoft/TypeScript), [Babel](https://babeljs.io/), [Preact](https://github.com/developit/preact), [Redux-Zero](https://github.com/redux-zero/redux-zero) and loaders. Code a application in HTML (5), SASS (CSS), TS (X) and JS (X).
 
-Start in seconds with your project in two ways. You have with this scaffold generator the followed.
+- Webpack (Bundler)
+- TypeScript (Code in ES6 or higher) 
+- Preact (TSX and JSX)
+- Redux-Zero (Storage) 
+- Babel (Compile back for Browserslist to last 2 versions or other options)
+
+A total solution for your projects. You have with this scaffold the followed.
 
 - Supported [yeoman-generator](https://yeoman.io/) and [webpack-cli](https://github.com/webpack/webpack-cli).
 - Prompts for create the project.
@@ -42,6 +48,8 @@ Start in seconds with your project in two ways. You have with this scaffold gene
        - [TodoList](https://preactjs.com/)
 
 Serach in [Yeoman generator](https://yeoman.io/generators/) or in [NPM](https://www.npmjs.com) for webpack-preact or preact.
+
+Install in two ways, choose your favourite.
 
 # Install with npm and use with Yeoman
 
