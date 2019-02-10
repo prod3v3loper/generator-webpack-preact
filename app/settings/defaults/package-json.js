@@ -52,7 +52,7 @@ module.exports = function createPackageJson(answer) {
             "preact": "^8.2.5",
             "redux-zero": "^4.10.0"
         }
-    }
+    };
 
     return pkgJsonConf;
 };

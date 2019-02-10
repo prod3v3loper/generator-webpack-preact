@@ -69,7 +69,7 @@ module.exports = class WebpackGenerator extends Generator {
                 webpackOptions: {},
                 configName: ""
             }
-        }
+        };
     }
 
     /**
@@ -87,7 +87,7 @@ module.exports = class WebpackGenerator extends Generator {
                 type: "input",
                 name: "name",
                 message: "Customer name?",
-                default: this.appname.replace(/\s/g, '-').toLocaleLowerCase() // Default to current folder name
+                default: this.appname.replace(/\s/g, "-").toLocaleLowerCase() // Default to current folder name
             }, {
                 type: "input",
                 name: "year",
@@ -122,7 +122,7 @@ module.exports = class WebpackGenerator extends Generator {
             'const HtmlWebpackPlugin = require("html-webpack-plugin")'
         ];
         this.options.env.configuration.config.webpackOptions = createCommonConfig(this.answers);
-        this.options.env.configuration.config.configName = 'config';
+        this.options.env.configuration.config.configName = "config";
 
         // DEV
         this.options.env.configuration.dev.topScope = [
@@ -132,8 +132,8 @@ module.exports = class WebpackGenerator extends Generator {
             'const common = require("./webpack.config.js")'
         ];
         this.options.env.configuration.dev.webpackOptions = createDevConfig(this.answers);
-        this.options.env.configuration.dev.merge = 'common';
-        this.options.env.configuration.dev.configName = 'dev';
+        this.options.env.configuration.dev.merge = "common";
+        this.options.env.configuration.dev.configName = "dev";
 
         // PRO
         this.options.env.configuration.pro.topScope = [
@@ -142,8 +142,8 @@ module.exports = class WebpackGenerator extends Generator {
             'const common = require("./webpack.config.js")'
         ];
         this.options.env.configuration.pro.webpackOptions = createProConfig(this.answers);
-        this.options.env.configuration.pro.merge = 'common';
-        this.options.env.configuration.pro.configName = 'pro';
+        this.options.env.configuration.pro.merge = "common";
+        this.options.env.configuration.pro.configName = "pro";
 
         // Define root folder
         this.settings.root = this.answers.name + "/" + this.answers.year + "/" + this.answers.project;
@@ -168,24 +168,24 @@ module.exports = class WebpackGenerator extends Generator {
 
         // Copy tpls from scaffold to project
         this.fs.copyTpl(
-            this.templatePath('sources'),
-            this.destinationPath('src')
+            this.templatePath("sources"),
+            this.destinationPath("src")
         );
 
         this.fs.copyTpl(
-            this.templatePath('public'),
-            this.destinationPath('public')
+            this.templatePath("public"),
+            this.destinationPath("public")
         );
 
         // package.json
-        this.fs.extendJSON(this.destinationPath('package.json'), createPackageJson(this.answers));
+        this.fs.extendJSON(this.destinationPath("package.json"), createPackageJson(this.answers));
 
         // global.config.json
-        this.fs.extendJSON(this.destinationPath('global.config.json'), createGLOBALSjson(this.answers));
+        this.fs.extendJSON(this.destinationPath("global.config.json"), createGLOBALSjson(this.answers));
 
         // tsconfig.json
-        this.fs.extendJSON(this.destinationPath('tsconfig.dev.json'), createDevTsconfig(this.answers));
-        this.fs.extendJSON(this.destinationPath('tsconfig.pro.json'), createProTsconfig(this.answers));
+        this.fs.extendJSON(this.destinationPath("tsconfig.dev.json"), createDevTsconfig(this.answers));
+        this.fs.extendJSON(this.destinationPath("tsconfig.pro.json"), createProTsconfig(this.answers));
 
         // Used components
         if (this.answers.components && this.answers.components.indexOf(', ') > -1) {
@@ -194,27 +194,27 @@ module.exports = class WebpackGenerator extends Generator {
             for (let i = 0; i < array.length; i++) {
                 // Copy tpls
                 this.fs.copyTpl(
-                    this.templatePath('components/' + array[i]),
-                    this.destinationPath('src/components/' + array[i])
+                    this.templatePath("components/" + array[i]),
+                    this.destinationPath("src/components/" + array[i])
                 );
             }
-        } else {
+        } else if (this.answers.components) {
             let arr = this.answers.components;
             for (let i = 0; i < arr.length; i++) {
                 // Copy tpls
                 this.fs.copyTpl(
-                    this.templatePath('components/' + arr[i]),
-                    this.destinationPath('src/components/' + arr[i])
+                    this.templatePath("components/" + arr[i]),
+                    this.destinationPath("src/components/" + arr[i])
                 );
             }
         }
 
         this.fs.copyTpl(
-            this.templatePath('configs'),
-            this.destinationPath('./')
+            this.templatePath("configs"),
+            this.destinationPath("./")
         );
 
-        this.config.set('configuration', this.options.env.configuration);
+        this.config.set("configuration", this.options.env.configuration);
     }
 
     /**

@@ -37,7 +37,7 @@ module.exports = function createTsconfigJson(answer) {
             "src/*.ts",
             "src/*.tsx"
         ]
-    }
+    };
 
     return tsJsonConf;
 };
