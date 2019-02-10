@@ -176,7 +176,7 @@ module.exports = class WebpackGenerator extends Generator {
 
         this.fs.copyTpl(
             this.templatePath( "public/index.html" ),
-            this.destinationPath( 'public/index.html' ),
+            this.destinationPath( "public/index.html" ),
             { title: "Webpack Preact by prod3v3loper" }
         );
 

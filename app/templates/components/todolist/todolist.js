@@ -7,14 +7,14 @@
 import { h, render, Component } from "preact";
 
 export default class ToDoList extends Component {
-    state = { todos: [], text: '' };
+    state = { todos: [], text: "" };
     setText = e => {
         this.setState( { text: e.target.value } );
     };
     addToDo = () => {
         let { todos, text } = this.state;
         todos = todos.concat( { text } );
-        this.setState( { todos, text: '' } );
+        this.setState( { todos, text: "" } );
     };
     render( { }, { todos, text } ) {
         return (
