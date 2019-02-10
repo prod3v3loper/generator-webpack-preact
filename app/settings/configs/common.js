@@ -45,7 +45,7 @@ module.exports = function createComConfig( answer ) {
                 ],
             }]
         }
-    }
+    };
 
     return comConf;
 };

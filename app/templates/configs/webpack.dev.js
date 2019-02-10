@@ -15,8 +15,7 @@ module.exports = merge(common, {
 	devServer: {
 		contentBase: "./dist",
 		hot: true,
-		compress: false,
-		port: 9000
+		compress: false
 	},
 
 	plugins: [new webpack.HotModuleReplacementPlugin()],
@@ -26,8 +25,8 @@ module.exports = merge(common, {
 			{
 				test: /\.(tsx?|jsx?)$/,
 				loader: "ts-loader",
-				include: path.resolve(__dirname, "src"),
-
+				// include: 'path.resolve(__dirname, "src")',
+                exclude: /node_modules/,
 				options: {
 					configFile: "tsconfig.dev.json"
 				}

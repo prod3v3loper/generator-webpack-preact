@@ -6,8 +6,8 @@ import './scss/style.scss'; // STYLE
 import { h, render, Component } from 'preact'; // DEPENDENCIES
 import { Provider } from 'redux-zero/preact'; // STORAGE
 // COMPONENT
-import store from './components/counter/store';
-import Counter from './components/counter/counter';
+import store from '../components/counter/store';
+import Counter from '../components/counter/counter';
 
 declare const module: any;
 

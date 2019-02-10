@@ -15,8 +15,7 @@ module.exports = function createDevConfig( answer ) {
         devServer: {
             contentBase: "'./dist'",
             hot: true,
-            compress: false,
-            port: 9000
+            compress: false
         },
         // Insert all plugins is existst in devPlugins()
         plugins: devPlugins(),
@@ -24,14 +23,15 @@ module.exports = function createDevConfig( answer ) {
             rules: [{
                 test: '/\\.(tsx?|jsx?)$/',
                 loader: "'ts-loader'",
-                include: 'path.resolve(__dirname, "src")',
+                // include: 'path.resolve(__dirname, "src")',
+                exclude: '/node_modules/',
                 // Load ts dev config
                 options: {
                     configFile: "'tsconfig.dev.json'"
                 }
             }]
         }
-    }
+    };
 
     return devConf;
 };

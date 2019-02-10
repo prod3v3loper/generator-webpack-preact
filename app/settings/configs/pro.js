@@ -18,14 +18,15 @@ module.exports = function createProConfig( answer ) {
             rules: [{
                 test: '/\\.(tsx?|jsx?)?$/',
                 loader: "'ts-loader'",
-                include: 'path.resolve(__dirname, "src")',
+                // include: 'path.resolve(__dirname, "src")',
+                exclude: '/node_modules/',
                 // Load ts pro config
                 options: {
                     configFile: "'tsconfig.pro.json'"
                 }
             }]
         }
-    }
+    };
 
     return proConf;
 };
