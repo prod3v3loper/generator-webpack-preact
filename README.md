@@ -15,7 +15,7 @@
 
 [Github Theme Page](https://prod3v3loper.github.io/generator-webpack-preact/)
 
-This scaffold creates in seconds for you a professional environment to develop with a package of [Webpack](https://webpack.js.org/), [TypeScript](https://www.typescriptlang.org/), [Preact](https://preactjs.com/) and [Redux-Zero](https://matheusml1.gitbooks.io/redux-zero-docs/content/) a application in HTML, SASS, TS(X) and JS(X).
+This scaffold creates in seconds for you a professional environment to develop with a package of [Webpack](https://webpack.js.org/), [TypeScript](https://github.com/Microsoft/TypeScript), [Preact](https://github.com/developit/preact) and [Redux-Zero](https://github.com/redux-zero/redux-zero) a application in HTML, SASS, TS(X) and JS(X).
 
 Start in seconds with your project. You have with this scaffold generator the followed.
 
