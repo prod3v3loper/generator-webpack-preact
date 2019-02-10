@@ -45,7 +45,7 @@ Serach in [Yeoman generator](https://yeoman.io/generators/) or in [NPM](https://
 
 # Install with npm and use with Yeoman
 
-> This option don't create the webpack configs dynamically
+> NPM and Yeoman
 
 Install [Node.js](https://nodejs.org/en/) to use the Node Package Manager (NPM).
 You can use `yo` (Yeoman) to install the scaffold and start with it.
@@ -98,7 +98,7 @@ Enter and create your project
 
 # Install with Git and use with Webpack
 
-> This option overwrite the webpack configs dynamically he was created.
+> Git and Webpack
 
 Install [Git](https://git-scm.com/) to clone with it.
 Create a Scaffold Templates folder and open your Terminal, to switch in the folder.
