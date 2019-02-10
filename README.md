@@ -1,13 +1,15 @@
 # Generator Webpack Preact
 
-![NPM Version](https://img.shields.io/npm/v/generator-webpack-preact.svg?style=flat "NPM Version")
-![Travis CI](https://img.shields.io/travis/prod3v3loper/generator-webpack-preact.svg?style=flat "Travis CI")
+[![NPM Version](https://img.shields.io/npm/v/generator-webpack-preact.svg?style=flat "NPM Version")](https://www.npmjs.com/package/generator-webpack-preact)
+[![Travis CI](https://img.shields.io/travis/prod3v3loper/generator-webpack-preact.svg?style=flat "Travis CI")](https://travis-ci.org/prod3v3loper/generator-webpack-preact)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/96c9667f61854441b426a81a96deb52a)](https://www.codacy.com/app/prod3v3loper/generator-webpack-preact?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=prod3v3loper/generator-webpack-preact&amp;utm_campaign=Badge_Grade)
 ![Languages](https://img.shields.io/github/languages/count/hyp3rly/generator-webpack-preact.svg?style=flat "Language Count")
 ![Commits](https://img.shields.io/github/commit-activity/m/hyp3rly/generator-webpack-preact.svg?style=flat "Commit Activity")
 ![Minified](https://img.shields.io/bundlephobia/min/generator-webpack-preact.svg?style=flat "Minified")
 ![Gzipped](https://img.shields.io/bundlephobia/minzip/generator-webpack-preact.svg?style=flat "Minified & Gzipped")
 ![Donwloads](https://img.shields.io/npm/dw/generator-webpack-preact.svg?style=flat "NPM Donwloads")
 ![License](https://img.shields.io/npm/l/generator-webpack-preact.svg?style=flat "License")
+![Issues](https://img.shields.io/github/issues/prod3v3loper/generator-webpack-preact.svg?style=flat "Issues")
 
 This scaffold creates in seconds for you a professional envoirement to develop with a package of [Webpack](https://webpack.js.org/), [TypeScript](https://www.typescriptlang.org/), [Preact](https://preactjs.com/) and [Redux-Zero](https://matheusml1.gitbooks.io/redux-zero-docs/content/) a application in HTML, SASS, TS(X) and JS(X).
 
@@ -16,6 +18,10 @@ This scaffold creates in seconds for you a professional envoirement to develop w
 - Plugins inside and ready to add more
 - Install packages after scaffolding ready
 - You can create more components and choose it in the scaffolding.
+
+[Theme Page](https://prod3v3loper.github.io/generator-webpack-preact/)
+
+Serach in [Yeoman generator](https://yeoman.io/generators/) for webpack-preact or preact.
 
 # Install with npm and use with Yeoman
 
@@ -61,9 +67,9 @@ If promt a call
   Run a generator
 > webpack-preact
 ```
-projects$ or directly
+or directly
 ```
-yo webpack-preact
+projects$ yo webpack-preact
 ```
 
 Enter and create your project
@@ -201,6 +207,10 @@ Now run and see the Magic :)
 Switch to the new project folder we have created. (You typed in the prompt default **newsletter**)
 ```
 projects$ cd /Users/username/projects/customer/year/newsletter
+```
+If you not installed dependencies, then install first.
+```
+projects$ npm install
 ```
 
 This command start the Server with the hotmodule.

@@ -23,15 +23,14 @@
         "yeoman",
         "generator",
         "webpack",
-        "webpack-init",
         "webpack-cli",
+        "webpack-init",
         "webpack-scaffold",
+        "webpack-dev-server",
         "typescript",
         "preact",
         "redux-zero",
-        "dev-server",
-        "hmr",
-        "scaffold"
+        "hmr"
     ],
     "author": "Samet Tarim aka prod3v3loper",
     "license": "MIT",
