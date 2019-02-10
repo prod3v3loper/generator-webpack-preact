@@ -15,13 +15,15 @@
 
 [Github Theme Page](https://prod3v3loper.github.io/generator-webpack-preact/)
 
-This scaffold creates in seconds for you a professional environment to develop with a package of [Webpack](https://webpack.js.org/), [TypeScript](https://github.com/Microsoft/TypeScript), [Preact](https://github.com/developit/preact) and [Redux-Zero](https://github.com/redux-zero/redux-zero) a application in HTML, SASS, TS(X) and JS(X).
+This scaffold creates in seconds for you a professional environment to develop with a package of [Webpack](https://webpack.js.org/) (and loaders), [TypeScript](https://github.com/Microsoft/TypeScript), [Preact](https://github.com/developit/preact) and [Redux-Zero](https://github.com/redux-zero/redux-zero) a application in HTML, SASS, TS(X) and JS(X).
 
-Start in seconds with your project. You have with this scaffold generator the followed.
+Start in seconds with your project in two ways. You have with this scaffold generator the followed.
 
-- Welcome window with introduction for next steps.
+- Supported [yeoman-generator](https://yeoman.io/) and [webpack-cli](https://github.com/webpack/webpack-cli).
+- Prompts for create the project.
+- Welcome window with introduction for next steps after install.
 - Development Server with Hot Module Replacement (HMR) ready.
-- Install packages after scaffolding ready.
+- NPM Install dependencies after scaffolding ready.
 - Configs was splited to development and production.
     - Split to:
         - webpack.config.js
@@ -43,8 +45,10 @@ Serach in [Yeoman generator](https://yeoman.io/generators/) or in [NPM](https://
 
 # Install with npm and use with Yeoman
 
-Install [Node.js](https://nodejs.org/en/) ([NPM](https://www.npmjs.com) is inside) to use the Node Package Manager.
-You can use yo ([Yeoman](https://yeoman.io/)) to install the scaffold and start with it.
+> This option don't create the webpack configs dynamically
+
+Install [Node.js](https://nodejs.org/en/) to use the Node Package Manager (NPM).
+You can use `yo` (Yeoman) to install the scaffold and start with it.
 
 Switch to the projects folder.
 ```
@@ -94,6 +98,8 @@ Enter and create your project
 
 # Install with Git and use with Webpack
 
+> This option overwrite the webpack configs dynamically he was created.
+
 Install [Git](https://git-scm.com/) to clone with it.
 Create a Scaffold Templates folder and open your Terminal, to switch in the folder.
 ```
@@ -117,7 +123,7 @@ Switch to the projects folder.
 templates$ cd /Users/username/projects/
 ```
 
-Start the scaffolding with the [webpack-cli init](https://github.com/webpack/webpack-cli) from our scaffold templates folder with the template `generator-webpack-preact`
+Start the scaffolding with `webpack init` the [webpack-cli init](https://github.com/webpack/webpack-cli/blob/master/packages/init/README.md#webpack-cli-init) from our scaffold templates folder with the template `generator-webpack-preact`
 ```
 projects$ webpack init /Users/username/scaffold/templates/generator-webpack-preact
 ```
