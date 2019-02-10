@@ -1,4 +1,30 @@
-.class {
+#st-wrapper {
     overflow: hidden;
-    background: #fff;
+    width: 60%;
+    padding: 10%;
+    margin: 0 auto;
+}
+
+.st-infobox {
+    &__card {
+        margin: 1em auto;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, .02);
+        border: 1px solid rgba(0, 0, 0, .03);
+        border-radius: 4px;
+    }
+}
+
+code {
+    overflow: scroll;
+    display: block;
+    margin: 1em;
+    padding: 2em;
+    border-radius: 4px;
+    background-color: black;
+    color: #E3CEAB;
+    font-family: Consolas, 'Andale Mono', 'Monotype.com', 'Lucida Console', Monospace, Serif;
+    font-size: .9rem;
+    white-space: pre;
+    word-wrap: normal;
 }

@@ -13,15 +13,31 @@
 ![License](https://img.shields.io/npm/l/generator-webpack-preact.svg?style=flat "License")
 ![Issues](https://img.shields.io/github/issues/prod3v3loper/generator-webpack-preact.svg?style=flat "Issues")
 
+[Github Theme Page](https://prod3v3loper.github.io/generator-webpack-preact/)
+
 This scaffold creates in seconds for you a professional environment to develop with a package of [Webpack](https://webpack.js.org/), [TypeScript](https://www.typescriptlang.org/), [Preact](https://preactjs.com/) and [Redux-Zero](https://matheusml1.gitbooks.io/redux-zero-docs/content/) a application in HTML, SASS, TS(X) and JS(X).
 
-- Development Server with Hot Module Replacement (HMR) ready.
-- Configs was splited to development and production
-- Plugins inside and ready to add more
-- Install packages after scaffolding ready
-- You can create more components and choose it in the scaffolding.
+Start in seconds with your project. You have with this scaffold generator the followed.
 
-[Theme Page](https://prod3v3loper.github.io/generator-webpack-preact/)
+- Welcome window with introduction for next steps.
+- Development Server with Hot Module Replacement (HMR) ready.
+- Install packages after scaffolding ready.
+- Configs was splited to development and production.
+    - Split to:
+        - webpack.config.js
+        - webpack.dev.js (merged with webpack.config.js)
+        - webpack.pro.js (merged with webpack.config.js)
+        - tsconfig.dev.js (merged with webpack.dev.js)
+        - tsconfig.pro.js (merged with webpack.pro.js)
+- Plugins inside and ready to add more.
+     - Inside Plugins:
+        - [HTML Webpack Plugin](https://github.com/jantimon/html-webpack-plugin)
+        - [Clean Webpack Plugin](https://github.com/johnagan/clean-webpack-plugin)
+- You can create more components, example components inside and chooseable.
+    - Inside components:
+       - [Counter](https://matheusml1.gitbooks.io/redux-zero-docs/content/examples/preact.html)
+       - [Clock](https://preactjs.com/guide/getting-started)
+       - [TodoList](https://preactjs.com/)
 
 Serach in [Yeoman generator](https://yeoman.io/generators/) for webpack-preact or preact.
 
@@ -210,9 +226,9 @@ Switch to the new project folder we have created. (You typed in the prompt defau
 ```
 projects$ cd /Users/username/projects/customer/year/newsletter
 ```
-If you not installed dependencies, then install first.
+If you not installed dependencies in the prompts, then install first.
 ```
-projects$ npm install
+newsletter$ npm install
 ```
 
 This command start the Server with the hotmodule.

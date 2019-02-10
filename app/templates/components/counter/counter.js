@@ -1,3 +1,8 @@
+/**
+ * Component Counter Example Redux Zero
+ * 
+ * @see     https://matheusml1.gitbooks.io/redux-zero-docs/content/examples/preact.html
+ */
 import { h, render, Component } from "preact";
 import { connect } from "redux-zero/preact";
 // import { Connect } from 'unistore/preact';
