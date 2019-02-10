@@ -248,7 +248,7 @@ newsletter$ npm run release
 
 # Uninstall
 
-## NPM
+**NPM**
 
 Local
 ```
