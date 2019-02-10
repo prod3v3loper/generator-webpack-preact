@@ -2,7 +2,7 @@
  * Extra config file, for Base and Globals
  */
 
-module.exports = function createGlobalJson( answer ) {
+module.exports = function createGlobalJson(answer) {
 
     let globalJsonConf = {
         "baseurl": "https://mydomain",
@@ -14,4 +14,4 @@ module.exports = function createGlobalJson( answer ) {
     };
 
     return globalJsonConf;
-}
+};

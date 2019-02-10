@@ -1,26 +1,26 @@
-const path = require('path');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require("path");
+const CleanWebpackPlugin = require("clean-webpack-plugin");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
 	entry: {
-		index: './src/index.tsx'
+		index: "./src/index.tsx"
 	},
 
 	output: {
-		filename: '[name].bundle.js',
-		path: path.resolve(__dirname, './dist')
+		filename: "[name].bundle.js",
+		path: path.resolve(__dirname, "./dist")
 	},
 
 	resolve: {
-		extensions: ['.ts', '.tsx', '.js', '.jsx']
+		extensions: [".ts", ".tsx", ".js", ".jsx"]
 	},
 
 	plugins: [
-		new CleanWebpackPlugin(['dist']),
+		new CleanWebpackPlugin(["dist"]),
 		new HtmlWebpackPlugin({
-			title: 'WebPack - Preact',
-			template: './public/index.html',
-			inlineSource: '.(js|css)$'
+			title: "WebPack - Preact",
+			template: "./public/index.html",
+			inlineSource: ".(js|css)$"
 		})
 	],
 
@@ -31,13 +31,13 @@ module.exports = {
 
 				use: [
 					{
-						loader: 'style-loader'
+						loader: "style-loader"
 					},
 					{
-						loader: 'css-loader'
+						loader: "css-loader"
 					},
 					{
-						loader: 'sass-loader'
+						loader: "sass-loader"
 					}
 				]
 			}

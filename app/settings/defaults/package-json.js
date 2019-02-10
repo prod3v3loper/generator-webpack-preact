@@ -34,7 +34,7 @@ module.exports = function createPackageJson(answer) {
             "build:release": "webpack --config webpack.pro.js"
         },
         "devDependencies": {
-            "webpack": '^4.29.0',
+            "webpack": "^4.29.0",
             "webpack-cli": "^3.2.1",
             "webpack-dev-server": "^3.1.10",
             "webpack-merge": "^4.1.4",
@@ -55,4 +55,4 @@ module.exports = function createPackageJson(answer) {
     }
 
     return pkgJsonConf;
-}
+};

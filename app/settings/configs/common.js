@@ -2,7 +2,7 @@
  * webpack.config.js
  */
 // Get the dev plugins
-const comPlugins = require( '../plugins/common' );
+const comPlugins = require( "../plugins/common" );
 
 module.exports = function createComConfig( answer ) {
 
@@ -48,4 +48,4 @@ module.exports = function createComConfig( answer ) {
     }
 
     return comConf;
-}
+};

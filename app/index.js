@@ -1,19 +1,19 @@
 // DEFAULTS
-const createGLOBALSjson = require('./settings/defaults/global');
-const createPackageJson = require('./settings/defaults/package-json');
-const createDevTsconfig = require('./settings/defaults/ts-dev-json');
-const createProTsconfig = require('./settings/defaults/ts-pro-json');
+const createGLOBALSjson = require("./settings/defaults/global");
+const createPackageJson = require("./settings/defaults/package-json");
+const createDevTsconfig = require("./settings/defaults/ts-dev-json");
+const createProTsconfig = require("./settings/defaults/ts-pro-json");
 // Yeoman
-const Generator = require('yeoman-generator');
+const Generator = require("yeoman-generator");
 // Helper for create empty folders
 // const mkdirp = require( 'mkdirp' );
 // Scaffold
 // const List = require( '@webpack-cli/webpack-scaffold' ).List;
 // const Input = require( '@webpack-cli/webpack-scaffold' ).Input;
 // Default abstracted configs
-const createCommonConfig = require('./settings/configs/common');
-const createProConfig = require('./settings/configs/pro');
-const createDevConfig = require('./settings/configs/dev');
+const createCommonConfig = require("./settings/configs/common");
+const createProConfig = require("./settings/configs/pro");
+const createDevConfig = require("./settings/configs/dev");
 
 /**
  * Webpack Scaffolding by prod3v3loper
@@ -47,7 +47,7 @@ module.exports = class WebpackGenerator extends Generator {
         this.answers = {};
         this.settings = {
             install: false,
-            root: ''
+            root: ""
         };
 
         opts.env.configuration = {
@@ -57,17 +57,17 @@ module.exports = class WebpackGenerator extends Generator {
             config: {
                 topScope: [],
                 webpackOptions: {},
-                configName: ''
+                configName: ""
             },
             dev: {
                 topScope: [],
                 webpackOptions: {},
-                configName: ''
+                configName: ""
             },
             pro: {
                 topScope: [],
                 webpackOptions: {},
-                configName: ''
+                configName: ""
             }
         }
     }
@@ -84,32 +84,32 @@ module.exports = class WebpackGenerator extends Generator {
 
         // Chain the questions
         this.answers = await this.prompt([{
-                type: 'input',
-                name: 'name',
-                message: 'Customer name?',
+                type: "input",
+                name: "name",
+                message: "Customer name?",
                 default: this.appname.replace(/\s/g, '-').toLocaleLowerCase() // Default to current folder name
             }, {
-                type: 'input',
-                name: 'year',
-                message: 'Project year?',
-                default: '2019'
+                type: "input",
+                name: "year",
+                message: "Project year?",
+                default: "2019"
             }, {
-                type: 'input',
-                name: 'project',
-                message: 'Project name?',
-                default: 'newsletter'
+                type: "input",
+                name: "project",
+                message: "Project name?",
+                default: "newsletter"
             }, {
-                type: 'input',
-                name: 'components',
-                message: 'Components you want to use? (type comma seperated)',
-                default: ['counter']
+                type: "input",
+                name: "components",
+                message: "Components you want to use? (type comma seperated)",
+                default: ["counter"]
             },
             // List('device', 'For Device? (use arrow keys)', ['Online', 'Tablet', 'Mobile']),
             {
-                type: 'confirm',
-                name: 'npminstall',
-                message: 'Want you install all dependencies?',
-                default: 'Y/n'
+                type: "confirm",
+                name: "npminstall",
+                message: "Want you install all dependencies?",
+                default: "Y/n"
             }
         ]);
 

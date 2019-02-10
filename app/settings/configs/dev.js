@@ -2,18 +2,18 @@
  * webpack.dev.js
  */
 // Get the dev plugins
-const devPlugins = require( '../plugins/dev' );
+const devPlugins = require( "../plugins/dev" );
 
 module.exports = function createDevConfig( answer ) {
 
     let devConf = {
-        mode: '"development"',
+        mode: "'development'",
         optimization: {
             usedExports: true
         },
-        devtool: '"inline-source-map"',
+        devtool: "'inline-source-map'",
         devServer: {
-            contentBase: '"./dist"',
+            contentBase: "'./dist'",
             hot: true,
             compress: false,
             port: 9000
@@ -27,11 +27,11 @@ module.exports = function createDevConfig( answer ) {
                 include: 'path.resolve(__dirname, "src")',
                 // Load ts dev config
                 options: {
-                    configFile: '"tsconfig.dev.json"'
+                    configFile: "'tsconfig.dev.json'"
                 }
             }]
         }
     }
 
     return devConf;
-}
+};

@@ -2,12 +2,12 @@
  * webpack.pro.js
  */
 // Get the pro plugins
-// const proPlugins = require('../plugins/pro');
+// const proPlugins = require("../plugins/pro");
 
 module.exports = function createProConfig( answer ) {
 
     let proConf = {
-        mode: '"production"',
+        mode: "'production'",
         optimization: {
             usedExports: true,
             minimize: true
@@ -21,11 +21,11 @@ module.exports = function createProConfig( answer ) {
                 include: 'path.resolve(__dirname, "src")',
                 // Load ts pro config
                 options: {
-                    configFile: '"tsconfig.pro.json"'
+                    configFile: "'tsconfig.pro.json'"
                 }
             }]
         }
     }
 
     return proConf;
-}
+};

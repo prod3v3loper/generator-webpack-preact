@@ -1,19 +1,19 @@
-const path = require('path');
-const webpack = require('webpack');
-const merge = require('webpack-merge');
-const common = require('./webpack.config.js');
+const path = require("path");
+const webpack = require("webpack");
+const merge = require("webpack-merge");
+const common = require("./webpack.config.js");
 
 module.exports = merge(common, {
-	mode: 'development',
+	mode: "development",
 
 	optimization: {
 		usedExports: true
 	},
 
-	devtool: 'inline-source-map',
+	devtool: "inline-source-map",
 
 	devServer: {
-		contentBase: './dist',
+		contentBase: "./dist",
 		hot: true,
 		compress: false,
 		port: 9000
@@ -25,11 +25,11 @@ module.exports = merge(common, {
 		rules: [
 			{
 				test: /\.(tsx?|jsx?)$/,
-				loader: 'ts-loader',
-				include: path.resolve(__dirname, 'src'),
+				loader: "ts-loader",
+				include: path.resolve(__dirname, "src"),
 
 				options: {
-					configFile: 'tsconfig.dev.json'
+					configFile: "tsconfig.dev.json"
 				}
 			}
 		]

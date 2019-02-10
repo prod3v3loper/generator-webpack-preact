@@ -1,8 +1,8 @@
-import { h, render, Component } from 'preact';
-import { connect } from 'redux-zero/preact';
+import { h, render, Component } from "preact";
+import { connect } from "redux-zero/preact";
 // import { Connect } from 'unistore/preact';
 
-import actions from './actions';
+import actions from "./actions";
 
 const mapToProps = ( { count, text } ) => ( { count, text } );
 
