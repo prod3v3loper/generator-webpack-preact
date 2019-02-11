@@ -270,7 +270,7 @@ projects$ npm uninstall -g generator-webpack-preact
 
 # Contribute
 
-Please read the [contributing](https://github.com/prod3v3loper/generator-webpack-preact/CONTRIBUTING.md).
+Please read the [contributing](https://github.com/prod3v3loper/generator-webpack-preact/blob/master/CONTRIBUTING.md).
 
 # Authors
 
