@@ -47,6 +47,7 @@ module.exports = function createPackageJson( answer ) {
             "clean-webpack-plugin": "^0.1.19",
             "html-webpack-plugin": "^3.2.0",
             "@babel/core": "^7.2.2",
+            "@babel/plugin-transform-react-jsx": "^7.3.0",
             "@babel/plugin-proposal-class-properties": "^7.3.0",
             "@babel/plugin-proposal-object-rest-spread": "^7.3.2",
             "@babel/preset-env": "^7.3.1",

@@ -42,7 +42,10 @@ module.exports = merge(common, {
 					],
 					plugins: [
 						"@babel/plugin-proposal-object-rest-spread",
-						"@babel/plugin-proposal-class-properties"
+						"@babel/plugin-proposal-class-properties",
+						[
+							"@babel/plugin-transform-react-jsx", { "pragma":"h" }
+						]
 					]
 				}
 			},

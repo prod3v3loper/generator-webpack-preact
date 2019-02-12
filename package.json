@@ -1,7 +1,7 @@
 {
     "name": "generator-webpack-preact",
     "description": "Create professional projects and manage in environment with Webpack, TypeScript, Preact, Redux-Zero and Babel. HTML (5), SASS (CSS), TS (X) and JS (X). Small and compact solution.",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "main": "./app/index.js",
     "scripts": {},
     "files": [
@@ -10,9 +10,9 @@
     "devDependencies": {},
     "dependencies": {
         "@webpack-cli/webpack-scaffold": "^0.1.2",
-        "yeoman-generator": "^3.1.1",
         "preact": "^8.2.5",
-        "redux-zero": "^4.10.0"
+        "redux-zero": "^4.10.0",
+        "yeoman-generator": "^3.1.1"
     },
     "repository": {
         "type": "git",

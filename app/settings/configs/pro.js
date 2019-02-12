@@ -23,7 +23,8 @@ module.exports = function createProConfig( answer ) {
                     options: {
                         presets: [
                             "'@babel/typescript'",
-                            ["'@babel/preset-env'",
+                            [
+                                "'@babel/preset-env'",
                                 {
                                     "'targets'": {
                                         "'browsers'": [
@@ -35,7 +36,8 @@ module.exports = function createProConfig( answer ) {
                         ],
                         plugins: [
                             "'@babel/plugin-proposal-object-rest-spread'",
-                            "'@babel/plugin-proposal-class-properties'"
+                            "'@babel/plugin-proposal-class-properties'",
+                            ["'@babel/plugin-transform-react-jsx'", { "'pragma'":"'h'" }]
                         ]
                     }
                 },

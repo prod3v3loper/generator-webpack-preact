@@ -16,7 +16,7 @@
 
 [Github Theme Page](https://prod3v3loper.github.io/generator-webpack-preact/)
 
-This scaffold creates in seconds for you a professional environment to develop with a package of [Webpack](https://webpack.js.org/), [TypeScript](https://github.com/Microsoft/TypeScript), [Babel](https://babeljs.io/), [Preact](https://github.com/developit/preact), [Redux-Zero](https://github.com/redux-zero/redux-zero) and loaders. Code a application in HTML (5), SASS (CSS), TS (X) and JS (X).
+This scaffold creates in seconds for you a professional environment to develop with a package of [Webpack](https://webpack.js.org/), [TypeScript](https://github.com/Microsoft/TypeScript), [Preact](https://github.com/developit/preact), [Redux-Zero](https://github.com/redux-zero/redux-zero) and [Babel](https://babeljs.io/). Code a application in HTML (5), SASS (CSS), TS (X) and JS (X).
 
 - Webpack (Bundler)
 - TypeScript (Code in ES6 or higher) 
@@ -26,14 +26,14 @@ This scaffold creates in seconds for you a professional environment to develop w
 
 A total solution for your projects. You have with this scaffold the followed.
 
-- Supported [yeoman-generator](https://yeoman.io/) and [webpack-cli](https://github.com/webpack/webpack-cli).
-- Prompts for create the project.
-- Welcome window with introduction for next steps after install.
-- Development Server with Hot Module Replacement (HMR) ready.
+- Install with [yeoman](https://yeoman.io/) and [webpack](https://github.com/webpack/webpack-cli).
+- 5 Prompts for create the project.
 - NPM Install dependencies after scaffolding ready.
+- Development Server with Hot Module Replacement (HMR) ready.
+   - Welcome window with introduction for next steps after install.
 - Configs was splited to development and production.
     - Split to:
-        - webpack.config.js
+        - webpack.config.js (common)
         - webpack.dev.js (merged with webpack.config.js)
         - webpack.pro.js (merged with webpack.config.js)
         - tsconfig.dev.js (merged with webpack.dev.js)
@@ -48,7 +48,7 @@ A total solution for your projects. You have with this scaffold the followed.
        - [Clock](https://preactjs.com/guide/getting-started)
        - [TodoList](https://preactjs.com/)
 
-Serach in [Yeoman generator](https://yeoman.io/generators/) or in [NPM](https://www.npmjs.com) for webpack-preact or preact.
+You find generator-webpack-preact in [Yeoman generator](https://yeoman.io/generators/), [NPM](https://www.npmjs.com) and on Github.
 
 Install in two ways, choose your favourite.
 
@@ -172,14 +172,14 @@ The following structure is created after the prompt input. With the typed data.
 
 ```
 Projects
-
-├── customer/ (project name)
-|   └── year/ (2019)
-|       └── project/ (newsletter)
+|
+├── customer/ (prompt: project name)
+|   └── year/ (prompt: 2019)
+|       └── project/ (prompt: newsletter)
 |           └── public/
 |           |   └── index.html
 |           └── src/
-|               └── components/
+|               └── components/ (prompt: type comma seperated)
 |               |   └── counter/
 |               |       └── actions.js
 |               |       └── counter.js
@@ -193,14 +193,14 @@ But the idea behind it is to collect and manage all our projects in our projects
 
 ```
 Projects
-
-├── customer/ (project name)
-|   └── year/ (2019)
-|       └── project/ (newsletter)
+|
+├── customer/ (prompt: project name)
+|   └── year/ (prompt: 2019)
+|       └── project/ (prompt: newsletter)
 |           └── public/
 |           |   └── index.html
 |           └── src/
-|               └── components/
+|               └── components/ (prompt: type comma seperated)
 |               |   └── counter/
 |               |       └── actions.js
 |               |       └── counter.js
