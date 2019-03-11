@@ -56,7 +56,7 @@ module.exports = function createPackageJson( answer ) {
         },
         "dependencies": {
             "preact": "^8.2.5",
-            "redux-zero": "^4.10.0"
+            "redux-zero": "^5.0.0"
         }
     };
 
