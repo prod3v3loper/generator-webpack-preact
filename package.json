@@ -1,7 +1,7 @@
 {
     "name": "generator-webpack-preact",
     "description": "Create professional projects and manage in environment with Webpack, TypeScript, Preact, Redux-Zero and Babel. HTML (5), SASS (CSS), TS (X) and JS (X). Small and compact solution.",
-    "version": "1.2.1",
+    "version": "1.2.2",
     "main": "./app/index.js",
     "scripts": {},
     "files": [
