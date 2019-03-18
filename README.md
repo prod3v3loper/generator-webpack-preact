@@ -255,6 +255,81 @@ This command build the dist folder with the end product.
 ```
 newsletter$ npm run release
 ```
+## Create a Component
+
+### SASS and CSS - Images and Videos
+
+Import your sass or css files in easy way.
+Import all your images and videos.
+
+```scss
+.maa-slider {
+
+    width: 100%;
+    height: 100%;
+
+    &__inner {
+
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        background-color: lightgrey;
+    }
+
+    &__list {
+
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+    }
+} 
+```
+
+```jsx
+
+import "./scss/slider.scss";
+import { h, render, Component } from "preact";
+
+export default class Slider extends Component {
+
+    images = [];
+    videos = [];
+
+    constructor() {
+
+        super();
+
+        this.images = this.importDefault(require.context('./img', false, /\.(png|jpe?g|svg)$/));
+        this.videos = this.importDefault(require.context('./video', false, /\.(mp4)$/));
+
+        console.log(this.images);
+        console.log(this.videos);
+    }
+
+    importDefault(r) {
+        return r.keys().map(r);
+    }
+
+    render( props ) {
+
+        this.items = this.images.map( 
+            (item, key) => <li class="maa-slider__item"><img src={item} alt=""></img></li>
+        );
+
+        return ( 
+            <div class="maa-slider">
+                <div class="maa-slider__inner">
+                    <ul class="maa-slider__list">
+                        {this.items}
+                    </ul>
+                </div>
+            </div>
+         );
+    }
+}
+```
 
 # Uninstall
 
@@ -275,8 +350,8 @@ Please read the [contributing](https://github.com/prod3v3loper/generator-webpack
 
 # Authors
 
-* **Samet Tarim** - *All works* - [prod3v3loper](https://www.tnado.com/author/prod3v3loper/)
+**Samet Tarim** - *All works*
 
 # License
 
-[MIT](https://github.com/prod3v3loper/generator-webpack-preact/blob/master/LICENSE)
+[MIT](https://github.com/prod3v3loper/generator-webpack-preact/blob/master/LICENSE) - [prod3v3loper](https://www.tnado.com/author/prod3v3loper/)

@@ -1,6 +1,7 @@
 const path = require("path");
 const CleanWebpackPlugin = require("clean-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+
 module.exports = {
 	entry: {
 		index: "./src/index.tsx"
@@ -32,7 +33,6 @@ module.exports = {
 		rules: [
 			{
 				test: /\.s?css$/,
-
 				use: [
 					{
 						loader: "style-loader"
@@ -43,6 +43,12 @@ module.exports = {
 					{
 						loader: "sass-loader"
 					}
+				]
+			},
+			{
+			 	test: /\.(png|svg|jpg|gif|mp4)$/,
+				use: [
+					'file-loader'
 				]
 			}
 		]

@@ -42,6 +42,7 @@ module.exports = function createPackageJson( answer ) {
             "node-sass": "^4.11.0",
             "sass-loader": "^6.0.7",
             "style-loader": "^0.20.3",
+            "file-loader": "^3.0.1",
             "ts-loader": "^5.3.3",
             "typescript": "^3.2.2",
             "clean-webpack-plugin": "^0.1.19",

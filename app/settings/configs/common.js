@@ -23,27 +23,35 @@ module.exports = function createComConfig( answer ) {
         plugins: comPlugins(),
 
         module: {
-            rules: [{
-                test: "/\\.s?css$/",
-                use: [
-                    // Chain the rules to seperate
-                    // If sass not exists get css
-                    {
-                        loader: "'style-loader'",
-                        // use when css not import in javascript
-                        // options: {
-                        //     insertAt: 'top', // Insert style tag at top of <head>
-                        //     singleton: true, // this is for wrap all your style in just one style tag
-                        // }
-                    },
-                    {
-                        loader: "'css-loader'"
-                    },
-                    {
-                        loader: "'sass-loader'"
-                    }
-                ],
-            }]
+            rules: [
+                {
+                    test: "/\\.s?css$/",
+                    use: [
+                        // Chain the rules to seperate
+                        // If sass not exists get css
+                        {
+                            loader: "'style-loader'",
+                            // use when css not import in javascript
+                            // options: {
+                            //     insertAt: 'top', // Insert style tag at top of <head>
+                            //     singleton: true, // this is for wrap all your style in just one style tag
+                            // }
+                        },
+                        {
+                            loader: "'css-loader'"
+                        },
+                        {
+                            loader: "'sass-loader'"
+                        }
+                    ],
+                },
+                {
+                    test: "/\\.(png|svg|jpg|gif|mp4)$/",
+                    use: [
+                        "'file-loader'"
+                    ]
+                }
+            ]
         }
     };
 
