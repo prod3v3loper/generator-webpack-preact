@@ -1,4 +1,4 @@
-# Generator Webpack Preact
+# 📦 Generator Webpack Preact
 
 ![Language](https://img.shields.io/github/languages/top/prod3v3loper/generator-webpack-preact.svg?style=flat "Language")
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/96c9667f61854441b426a81a96deb52a)](https://www.codacy.com/app/prod3v3loper/generator-webpack-preact?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=prod3v3loper/generator-webpack-preact&amp;utm_campaign=Badge_Grade)
@@ -261,9 +261,9 @@ This command build the dist folder with the end product.
 ```
 newsletter$ npm run release
 ```
-## Create a Component
+## Create a new Component
 
-### SASS and CSS - Images and Videos
+### Images and Videos
 
 Import your sass or css files in easy way.
 Import all your images and videos.
@@ -293,6 +293,8 @@ Import all your images and videos.
 } 
 ```
 
+This example will show how to get pictures or videos from a folder with this setup.
+
 ```jsx
 
 import "./scss/slider.scss";
@@ -307,7 +309,9 @@ export default class Slider extends Component {
 
         super();
 
+        // Load all images from foler
         this.images = this.importDefault(require.context('./img', false, /\.(png|jpe?g|svg)$/));
+        // Load all videos from folder
         this.videos = this.importDefault(require.context('./video', false, /\.(mp4)$/));
 
         console.log(this.images);
