@@ -15,8 +15,6 @@
 ![Minified](https://img.shields.io/bundlephobia/min/generator-webpack-preact.svg?style=flat "Minified")
 ![Gzipped](https://img.shields.io/bundlephobia/minzip/generator-webpack-preact.svg?style=flat "Minified & Gzipped")
 
-[Github Theme Page](https://prod3v3loper.github.io/generator-webpack-preact/)
-
 This scaffold creates in seconds for you a professional environment to develop with a package of [Webpack](https://webpack.js.org/), [TypeScript](https://github.com/Microsoft/TypeScript), [Preact](https://github.com/developit/preact), [Redux-Zero](https://github.com/redux-zero/redux-zero) and [Babel](https://babeljs.io/). Code a application in HTML (5), SASS (CSS), TS (X) and JS (X).
 
 - Webpack (Bundler)
@@ -49,7 +47,15 @@ A total solution for your projects. You have with this scaffold the followed.
        - [Clock](https://preactjs.com/guide/getting-started)
        - [TodoList](https://preactjs.com/)
 
+More information over the [Project Structur](https://github.com/prod3v3loper/generator-webpack-preact#what-this-do)
+
 You find generator-webpack-preact in [Yeoman generator](https://yeoman.io/generators/), [NPM](https://www.npmjs.com) and on Github.
+
+[NPM - generator-webpack-preact](https://www.npmjs.com/package/generator-webpack-preact)
+
+[GitHub - generator-webpack-preact](https://github.com/prod3v3loper/generator-webpack-preact)
+
+[Github Theme - generator-webpack-preact](https://prod3v3loper.github.io/generator-webpack-preact/)
 
 Install in two ways, choose your favourite.
 
