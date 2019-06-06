@@ -15,7 +15,7 @@
 ![Minified](https://img.shields.io/bundlephobia/min/generator-webpack-preact.svg?style=flat "Minified")
 ![Gzipped](https://img.shields.io/bundlephobia/minzip/generator-webpack-preact.svg?style=flat "Minified & Gzipped")
 
-This scaffold creates in seconds for you a professional environment to develop with a package of [Webpack](https://webpack.js.org/), [TypeScript](https://github.com/Microsoft/TypeScript), [Preact](https://github.com/developit/preact), [Redux-Zero](https://github.com/redux-zero/redux-zero) and [Babel](https://babeljs.io/). Code a application in HTML (5), SASS (CSS), TS (X) and JS (X).
+This scaffold creates in seconds for you a professional environment to develop with a package of [Webpack](https://webpack.js.org/), [TypeScript](https://github.com/Microsoft/TypeScript), [Preact](https://github.com/developit/preact), [Redux-Zero](https://github.com/redux-zero/redux-zero) and [Babel](https://github.com/babel/babel). Code a application in HTML (5), SASS (CSS), TS (X) and JS (X).
 
 - Webpack (Bundler)
 - TypeScript (Code in ES6 or higher) 
@@ -360,7 +360,11 @@ Please read the [contributing](https://github.com/prod3v3loper/generator-webpack
 
 # Authors
 
-**Samet Tarim** - *All works*
+**[Samet Tarim](https://www.prod3v3loper.com)** - *All works*
+
+# Support
+
+[Hyperly](https://www.hyperly.de)
 
 # License
 

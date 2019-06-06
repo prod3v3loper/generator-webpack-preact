@@ -17,7 +17,7 @@ module.exports = {
 	},
 
 	plugins: [
-		new CleanWebpackPlugin(["dist"]),
+		new CleanWebpackPlugin(['dist']),
 		new HtmlWebpackPlugin({
 			title: "WebPack - Preact",
 			template: "./public/index.html",
