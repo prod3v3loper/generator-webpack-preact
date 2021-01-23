@@ -261,6 +261,10 @@ This command build the dist folder with the end product.
 ```
 newsletter$ npm run release
 ```
+
+To close (stop the localhost server) the NPM run type in console (Terminal):
+Ctrl + C
+
 ## Create a new Component
 
 ### Images and Videos
