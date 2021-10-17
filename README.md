@@ -1,7 +1,9 @@
 # 📦 Generator Webpack Preact
 
 ![Language](https://img.shields.io/github/languages/top/prod3v3loper/generator-webpack-preact.svg?style=flat "Language")
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/96c9667f61854441b426a81a96deb52a)](https://www.codacy.com/app/prod3v3loper/generator-webpack-preact?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=prod3v3loper/generator-webpack-preact&amp;utm_campaign=Badge_Grade)
+
+<!-- [![Codacy Badge](https://api.codacy.com/project/badge/Grade/96c9667f61854441b426a81a96deb52a)](https://www.codacy.com/app/prod3v3loper/generator-webpack-preact?utm_source=github.com&utm_medium=referral&utm_content=prod3v3loper/generator-webpack-preact&utm_campaign=Badge_Grade) -->
+
 [![Travis CI](https://img.shields.io/travis/prod3v3loper/generator-webpack-preact.svg?style=flat "Travis CI")](https://travis-ci.org/prod3v3loper/generator-webpack-preact)
 [![NPM Version](https://img.shields.io/npm/v/generator-webpack-preact.svg?style=flat "NPM Version")](https://www.npmjs.com/package/generator-webpack-preact)
 [![NPM Donwloads](https://img.shields.io/npm/dw/generator-webpack-preact.svg?style=flat "NPM Donwloads")](https://www.npmjs.com/package/generator-webpack-preact)
@@ -15,12 +17,14 @@
 ![Minified](https://img.shields.io/bundlephobia/min/generator-webpack-preact.svg?style=flat "Minified")
 ![Gzipped](https://img.shields.io/bundlephobia/minzip/generator-webpack-preact.svg?style=flat "Minified & Gzipped")
 
+<div style="text-align:center; display: block;"><img style="width:150px;" src="https://media4.giphy.com/media/4KzpjLvJjJknJ5Xuak/giphy.gif?cid=ecf05e47t4rc89yc0kv329d4d10ga4ti7qo08pyth1w9c9c6&rid=giphy.gif" width="100%" height="100%"/></div>
+
 This scaffold creates in seconds for you a professional environment to develop with a package of [Webpack](https://webpack.js.org/), [TypeScript](https://github.com/Microsoft/TypeScript), [Preact](https://github.com/developit/preact), [Redux-Zero](https://github.com/redux-zero/redux-zero) and [Babel](https://github.com/babel/babel). Code a application in HTML (5), SASS (CSS), TS (X) and JS (X).
 
 - Webpack (Bundler)
-- TypeScript (Code in ES6 or higher) 
+- TypeScript (Code in ES6 or higher)
 - Preact (TSX and JSX)
-- Redux-Zero (Storage) 
+- Redux-Zero (Storage)
 - Babel (Compile back for Browserslist to last 2 versions or other options)
 
 A total solution for your projects. You have with this scaffold the followed.
@@ -29,23 +33,23 @@ A total solution for your projects. You have with this scaffold the followed.
 - 5 Prompts for create the project.
 - NPM Install dependencies after scaffolding ready.
 - Development Server with Hot Module Replacement (HMR) ready.
-   - Welcome window with introduction for next steps after install.
+  - Welcome window with introduction for next steps after install.
 - Configs was splited to development and production.
-    - Split to:
-        - webpack.config.js (common)
-        - webpack.dev.js (merged with webpack.config.js)
-        - webpack.pro.js (merged with webpack.config.js)
-        - tsconfig.dev.js (merged with webpack.dev.js)
-        - tsconfig.pro.js (merged with webpack.pro.js)
+  - Split to:
+    - webpack.config.js (common)
+    - webpack.dev.js (merged with webpack.config.js)
+    - webpack.pro.js (merged with webpack.config.js)
+    - tsconfig.dev.js (merged with webpack.dev.js)
+    - tsconfig.pro.js (merged with webpack.pro.js)
 - Plugins inside and ready to add more.
-     - Inside Plugins:
-        - [HTML Webpack Plugin](https://github.com/jantimon/html-webpack-plugin)
-        - [Clean Webpack Plugin](https://github.com/johnagan/clean-webpack-plugin)
+  - Inside Plugins:
+    - [HTML Webpack Plugin](https://github.com/jantimon/html-webpack-plugin)
+    - [Clean Webpack Plugin](https://github.com/johnagan/clean-webpack-plugin)
 - You can create more components, example components inside and chooseable.
-    - Inside components:
-       - [Counter](https://matheusml1.gitbooks.io/redux-zero-docs/content/examples/preact.html)
-       - [Clock](https://preactjs.com/guide/getting-started)
-       - [TodoList](https://preactjs.com/)
+  - Inside components:
+    - [Counter](https://matheusml1.gitbooks.io/redux-zero-docs/content/examples/preact.html)
+    - [Clock](https://preactjs.com/guide/getting-started)
+    - [TodoList](https://preactjs.com/)
 
 More information over the [Project Structur](https://github.com/prod3v3loper/generator-webpack-preact#what-this-do)
 
@@ -64,9 +68,10 @@ Install in two ways, choose your favourite.
 > NPM and Yeoman
 
 Install [Node.js](https://nodejs.org/en/) to use the Node Package Manager (NPM).
-You can use `yo` (Yeoman) to install the scaffold and start with it.
+You can use `yo` (Yeoman) to install the scaffold and start with it, also install yeoman to `npm install -g yo`.
 
 Switch to the projects folder.
+
 ```
 username$ cd /Users/username/projects/
 ```
@@ -74,16 +79,21 @@ username$ cd /Users/username/projects/
 ```
 projects$ npm i generator-webpack-preact
 ```
+
 ```
 projects$ yo
 ```
+
 If promt a call
+
 ```
 ? 'Allo Tarim,! What would you like to do? (Use arrow keys)
   Run a generator
 > webpack-preact
 ```
+
 or directly
+
 ```
 projects$ yo webpack-preact
 ```
@@ -95,17 +105,23 @@ Enter and create your project
 ```
 projects$ sudo npm i -g generator-webpack-preact
 ```
+
 Type password and now run in your project folder
+
 ```
 projects$ yo
 ```
+
 If promt a call
+
 ```
 ? 'Allo Tarim,! What would you like to do? (Use arrow keys)
   Run a generator
 > webpack-preact
 ```
+
 or directly
+
 ```
 projects$ yo webpack-preact
 ```
@@ -118,16 +134,19 @@ Enter and create your project
 
 Install [Git](https://git-scm.com/) to clone with it.
 Create a Scaffold Templates folder and open your Terminal, to switch in the folder.
+
 ```
 username$ cd /Users/username/scaffold/templates/
 ```
 
 Clone the repo or download to the place, you want your templates.
+
 ```
 templates$ git clone https://github.com/prod3v3loper/generator-webpack-preact.git /Users/username/scaffold/templates/
 ```
 
 And now install all Dependencies in package.json for the generator
+
 ```
 templates$ npm install
 ```
@@ -135,11 +154,13 @@ templates$ npm install
 Now create your main Projects folder. This folder contains all projects that we then create.
 
 Switch to the projects folder.
+
 ```
 templates$ cd /Users/username/projects/
 ```
 
 Start the scaffolding with `webpack init` the [webpack-cli init](https://github.com/webpack/webpack-cli/blob/master/packages/init/README.md#webpack-cli-init) from our scaffold templates folder with the template `generator-webpack-preact`
+
 ```
 projects$ webpack init /Users/username/scaffold/templates/generator-webpack-preact
 ```
@@ -156,7 +177,8 @@ And we become a promt ;)
 ? Want you install all dependencies? Y/n
 ```
 
-After answer all questions start the create 
+After answer all questions start the create
+
 ```
    create src/index.tsx
    create src/scss/style.scss
@@ -245,19 +267,25 @@ Projects
 Now run and see the Magic :)
 
 Switch to the new project folder we have created. (You typed in the prompt default **newsletter**)
+
 ```
 projects$ cd /Users/username/projects/customer/year/newsletter
 ```
+
 If you not installed dependencies in the prompts, then install first.
+
 ```
 newsletter$ npm install
 ```
 
 This command start the Server with the hotmodule.
+
 ```
 newsletter$ npm run dev
 ```
+
 This command build the dist folder with the end product.
+
 ```
 newsletter$ npm run release
 ```
@@ -274,74 +302,71 @@ Import all your images and videos.
 
 ```scss
 .maa-slider {
+  width: 100%;
+  height: 100%;
 
+  &__inner {
+    overflow: hidden;
     width: 100%;
     height: 100%;
+    background-color: lightgrey;
+  }
 
-    &__inner {
-
-        overflow: hidden;
-        width: 100%;
-        height: 100%;
-        background-color: lightgrey;
-    }
-
-    &__list {
-
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        width: 100%;
-        height: 100%;
-    }
-} 
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
 ```
 
 This example will show how to get pictures or videos from a folder with this setup.
 
 ```jsx
-
 import "./scss/slider.scss";
 import { h, render, Component } from "preact";
 
 export default class Slider extends Component {
+  images = [];
+  videos = [];
 
-    images = [];
-    videos = [];
+  constructor() {
+    super();
 
-    constructor() {
+    // Load all images from foler
+    this.images = this.importDefault(
+      require.context("./img", false, /\.(png|jpe?g|svg)$/)
+    );
+    // Load all videos from folder
+    this.videos = this.importDefault(
+      require.context("./video", false, /\.(mp4)$/)
+    );
 
-        super();
+    console.log(this.images);
+    console.log(this.videos);
+  }
 
-        // Load all images from foler
-        this.images = this.importDefault(require.context('./img', false, /\.(png|jpe?g|svg)$/));
-        // Load all videos from folder
-        this.videos = this.importDefault(require.context('./video', false, /\.(mp4)$/));
+  importDefault(r) {
+    return r.keys().map(r);
+  }
 
-        console.log(this.images);
-        console.log(this.videos);
-    }
+  render(props) {
+    this.items = this.images.map((item, key) => (
+      <li class="maa-slider__item">
+        <img src={item} alt=""></img>
+      </li>
+    ));
 
-    importDefault(r) {
-        return r.keys().map(r);
-    }
-
-    render( props ) {
-
-        this.items = this.images.map( 
-            (item, key) => <li class="maa-slider__item"><img src={item} alt=""></img></li>
-        );
-
-        return ( 
-            <div class="maa-slider">
-                <div class="maa-slider__inner">
-                    <ul class="maa-slider__list">
-                        {this.items}
-                    </ul>
-                </div>
-            </div>
-         );
-    }
+    return (
+      <div class="maa-slider">
+        <div class="maa-slider__inner">
+          <ul class="maa-slider__list">{this.items}</ul>
+        </div>
+      </div>
+    );
+  }
 }
 ```
 
@@ -350,10 +375,13 @@ export default class Slider extends Component {
 **NPM**
 
 Local
+
 ```
 projects$ npm uninstall generator-webpack-preact
 ```
+
 Global
+
 ```
 projects$ npm uninstall -g generator-webpack-preact
 ```
@@ -364,7 +392,7 @@ Please read the [contributing](https://github.com/prod3v3loper/generator-webpack
 
 # Authors
 
-**[Samet Tarim](https://www.prod3v3loper.com)** - *All works*
+**[Samet Tarim](https://www.prod3v3loper.com)** - _All works_
 
 # Support
 
