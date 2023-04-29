@@ -4,7 +4,6 @@
 
 <!-- [![Codacy Badge](https://api.codacy.com/project/badge/Grade/96c9667f61854441b426a81a96deb52a)](https://www.codacy.com/app/prod3v3loper/generator-webpack-preact?utm_source=github.com&utm_medium=referral&utm_content=prod3v3loper/generator-webpack-preact&utm_campaign=Badge_Grade) -->
 
-[![Travis CI](https://img.shields.io/travis/prod3v3loper/generator-webpack-preact.svg?style=flat "Travis CI")](https://travis-ci.org/prod3v3loper/generator-webpack-preact)
 [![NPM Version](https://img.shields.io/npm/v/generator-webpack-preact.svg?style=flat "NPM Version")](https://www.npmjs.com/package/generator-webpack-preact)
 [![NPM Donwloads](https://img.shields.io/npm/dw/generator-webpack-preact.svg?style=flat "NPM Donwloads")](https://www.npmjs.com/package/generator-webpack-preact)
 [![Github Latest Release Version](https://img.shields.io/github/release/prod3v3loper/generator-webpack-preact.svg?style=flat "Github Latest Release Version")](https://github.com/prod3v3loper/generator-webpack-preact/releases)
@@ -13,7 +12,6 @@
 [![License](https://img.shields.io/npm/l/generator-webpack-preact.svg?style=flat "License")](https://github.com/prod3v3loper/generator-webpack-preact/blob/master/LICENSE)
 [![Issues](https://img.shields.io/github/issues/prod3v3loper/generator-webpack-preact.svg?style=flat "Issues")](https://github.com/prod3v3loper/generator-webpack-preact/issues)
 ![Languages](https://img.shields.io/github/languages/count/prod3v3loper/generator-webpack-preact.svg?style=flat "Language Count")
-[![Dependencies status](https://david-dm.org/prod3v3loper/generator-webpack-preact.svg "Dependencies status")](https://david-dm.org/prod3v3loper/generator-webpack-preact)
 ![Minified](https://img.shields.io/bundlephobia/min/generator-webpack-preact.svg?style=flat "Minified")
 ![Gzipped](https://img.shields.io/bundlephobia/minzip/generator-webpack-preact.svg?style=flat "Minified & Gzipped")
 
@@ -287,7 +285,7 @@ newsletter$ npm run dev
 This command build the dist folder with the end product.
 
 ```
-newsletter$ npm run release
+newsletter$ npm run prod
 ```
 
 To close (stop the localhost server) the NPM run type in console (Terminal):

@@ -20,7 +20,7 @@ const createDevConfig = require("./settings/configs/dev");
  * @author      Samet Tarim aka prod3v3loper
  * @copyright   Copyright (C) 2021 Samet Tarim - All rights reserved
  * @license     MIT
- * @version     1.3.1
+ * @version     1.3.2
  * @since       1.0
  * @package     MELABUAI
  * @subpackage  Webpack Scaffold
@@ -260,7 +260,9 @@ module.exports = class WebpackGenerator extends Generator {
    */
   install() {
     if (this.settings.install) {
-      this.npmInstall();
+      this.spawnCommand('npm', ['install']);
     }
+
+    // this.spawnCommand('composer', ['install']);
   }
 };
