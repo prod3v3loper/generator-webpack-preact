@@ -87,7 +87,7 @@ projects$ yo
 If promt a call
 
 ```
-? 'Allo Tarim,! What would you like to do? (Use arrow keys)
+? 'Hi prod3v3loper,! What would you like to do? (Use arrow keys)
   Run a generator
 > webpack-preact
 ```
@@ -115,7 +115,7 @@ projects$ yo
 If promt a call
 
 ```
-? 'Allo Tarim,! What would you like to do? (Use arrow keys)
+? 'Hi prod3v3loper,! What would you like to do? (Use arrow keys)
   Run a generator
 > webpack-preact
 ```

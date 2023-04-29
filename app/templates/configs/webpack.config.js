@@ -1,10 +1,10 @@
 const path = require("path");
-const CleanWebpackPlugin = require("clean-webpack-plugin");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
 	entry: {
-		index: "./src/index.tsx"
+		index: "./src/index.jsx"
 	},
 
 	output: {
@@ -17,7 +17,7 @@ module.exports = {
 	},
 
 	plugins: [
-		new CleanWebpackPlugin(['dist']),
+		new CleanWebpackPlugin(),
 		new HtmlWebpackPlugin({
 			title: "WebPack - Preact",
 			template: "./public/index.html",

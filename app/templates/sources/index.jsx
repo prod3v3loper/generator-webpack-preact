@@ -15,8 +15,6 @@ import Welcome from "../components/welcome/welcome";
 
 // import Clock from "../components/clock/clock";
 
-declare const module: any;
-
 // Create APP
 const App = () => (
     <div id="st-wrapper">

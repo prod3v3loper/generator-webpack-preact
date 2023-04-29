@@ -42,11 +42,7 @@ module.exports = function createProConfig(answer) {
           test: "/\\.(tsx?|jsx?)?$/",
           loader: "'ts-loader'",
           // include: 'path.resolve(__dirname, "src")',
-          exclude: "/node_modules/",
-          // Load ts pro config
-          options: {
-            configFile: "'tsconfig.pro.json'",
-          },
+          exclude: "/node_modules/"
         },
       ],
     },

@@ -12,7 +12,6 @@ module.exports = function createDevConfig(answer) {
     },
     devtool: "'inline-source-map'",
     devServer: {
-      contentBase: "'./dist'",
       hot: true,
       compress: false,
     },
@@ -47,11 +46,7 @@ module.exports = function createDevConfig(answer) {
           test: "/\\.(tsx?|jsx?)$/",
           loader: "'ts-loader'",
           // include: 'path.resolve(__dirname, "src")',
-          exclude: "/node_modules/",
-          // Load ts dev config
-          options: {
-            configFile: "'tsconfig.dev.json'",
-          },
+          exclude: "/node_modules/"
         },
       ],
     },

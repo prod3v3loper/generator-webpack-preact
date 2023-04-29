@@ -1,8 +1,7 @@
 // DEFAULTS
 const createGLOBALSjson = require("./settings/defaults/global");
 const createPackageJson = require("./settings/defaults/package-json");
-const createDevTsconfig = require("./settings/defaults/ts-dev-json");
-const createProTsconfig = require("./settings/defaults/ts-pro-json");
+const createTsconfig = require("./settings/defaults/tsconfig-json");
 // Yeoman
 const Generator = require("yeoman-generator");
 // Helper for create empty folders
@@ -18,10 +17,10 @@ const createDevConfig = require("./settings/configs/dev");
 /**
  * Webpack Scaffolding by prod3v3loper
  *
- * @author      Samet Tarim
+ * @author      Samet Tarim aka prod3v3loper
  * @copyright   Copyright (C) 2021 Samet Tarim - All rights reserved
  * @license     MIT
- * @version     1.3.0
+ * @version     1.3.1
  * @since       1.0
  * @package     MELABUAI
  * @subpackage  Webpack Scaffold
@@ -40,6 +39,7 @@ module.exports = class WebpackGenerator extends Generator {
    * @param {*} opts
    */
   constructor(args, opts) {
+
     super(args, opts);
 
     this.answers = {};
@@ -48,6 +48,7 @@ module.exports = class WebpackGenerator extends Generator {
       install: false,
       root: "",
     };
+
     // This method adds support for a `--coffee` flag
     // this.option("coffee");
 
@@ -102,7 +103,7 @@ module.exports = class WebpackGenerator extends Generator {
         type: "input",
         name: "year",
         message: "Project year?",
-        default: "2019",
+        default: "2023",
       },
       {
         type: "input",
@@ -113,7 +114,7 @@ module.exports = class WebpackGenerator extends Generator {
       {
         type: "input",
         name: "components",
-        message: "Components you want to use? (counter, todolist, clock)",
+        message: "Components you want to import? (counter, todolist, clock)",
         default: ["clock"],
       },
       {
@@ -167,7 +168,7 @@ module.exports = class WebpackGenerator extends Generator {
       this.answers
     );
     this.options.env.configuration.pro.merge = "common";
-    this.options.env.configuration.pro.configName = "pro";
+    this.options.env.configuration.pro.configName = "prod";
 
     // Define root folder
     this.settings.root =
@@ -212,12 +213,8 @@ module.exports = class WebpackGenerator extends Generator {
 
     // tsconfig.json
     this.fs.extendJSON(
-      this.destinationPath("tsconfig.dev.json"),
-      createDevTsconfig(this.answers)
-    );
-    this.fs.extendJSON(
-      this.destinationPath("tsconfig.pro.json"),
-      createProTsconfig(this.answers)
+      this.destinationPath("tsconfig.json"),
+      createTsconfig(this.answers)
     );
 
     // Used components

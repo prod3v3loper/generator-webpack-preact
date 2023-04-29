@@ -1,6 +1,6 @@
 const path = require("path");
 const webpack = require("webpack");
-const merge = require("webpack-merge");
+const { merge } = require("webpack-merge");
 const common = require("./webpack.config.js");
 
 module.exports = merge(common, {
@@ -13,7 +13,6 @@ module.exports = merge(common, {
 	devtool: "inline-source-map",
 
 	devServer: {
-		contentBase: "./dist",
 		hot: true,
 		compress: false
 	},
@@ -53,10 +52,7 @@ module.exports = merge(common, {
 				test: /\.(tsx?|jsx?)$/,
 				loader: "ts-loader",
 				// include: 'path.resolve(__dirname, "src")',
-                exclude: /node_modules/,
-				options: {
-					configFile: "tsconfig.dev.json"
-				}
+                exclude: /node_modules/
 			}
 		]
 	}

@@ -7,7 +7,7 @@ const comPlugins = require("../plugins/common");
 module.exports = function createComConfig(answer) {
   let comConf = {
     entry: {
-      index: answer.entry ? "'" + answer.entry + "'" : "'./src/index.tsx'",
+      index: answer.entry ? "'" + answer.entry + "'" : "'./src/index.jsx'",
     },
     // path in single quotes to work
     output: {
