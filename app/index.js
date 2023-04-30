@@ -20,7 +20,7 @@ const createDevConfig = require("./settings/configs/dev");
  * @author      Samet Tarim aka prod3v3loper
  * @copyright   Copyright (C) 2021 Samet Tarim - All rights reserved
  * @license     MIT
- * @version     1.3.2
+ * @version     1.3.3
  * @since       1.0
  * @package     MELABUAI
  * @subpackage  Webpack Scaffold

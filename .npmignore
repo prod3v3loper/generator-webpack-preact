@@ -3,5 +3,7 @@ dist
 .gitattributes
 .gitignore
 _config.yml
-.travis.yml
 package-lock.json
+node_modules
+generator-webpack-preact-*
+.DS_Store

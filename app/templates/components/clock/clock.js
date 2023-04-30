@@ -6,22 +6,20 @@
  */
 import { h, render, Component } from "preact";
 
-export default class Uhr extends Component {
+export default class Clock extends Component {
+
     constructor() {
         super();
-        // Initiale Zeit einstellen:
         this.state.time = Date.now();
     }
 
     componentDidMount() {
-        // Zeit jede Sekunde aktualisieren
         this.timer = setInterval( () => {
             this.setState( { time: Date.now() } );
         }, 1000 );
     }
 
     componentWillUnmount() {
-        // Stoppen, falls nicht renderbar
         clearInterval( this.timer );
     }
 

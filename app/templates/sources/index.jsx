@@ -18,18 +18,18 @@ import Welcome from "../components/welcome/welcome";
 // Create APP
 const App = () => (
     <div id="st-wrapper">
-        <div id="st-welcome">
+        <div class="st-welcome">
             <Welcome />
         </div>
-        {/* <div id="st-counter">
+        {/* <div class="st-counter">
             <Provider store={store}>
                 <Counter />
             </Provider>
         </div> */}
-        {/* <div id="st-todolist">
+        {/* <div class="st-todolist">
             <TodoList />
         </div> */}
-        {/* <div id="st-clock">
+        {/* <div class="st-clock">
             <Clock />
         </div> */}
     </div>

@@ -1,11 +1,19 @@
 #st-wrapper {
+
     overflow: hidden;
     width: 60%;
     padding: 10%;
     margin: 0 auto;
+    border: 1px solid gray;
+}
+
+.st-welcome {
+
+    text-align: center;
 }
 
 .st-infobox {
+
     &__card {
         margin: 1em auto;
         padding: 10px;
@@ -16,6 +24,7 @@
 }
 
 code {
+
     overflow: scroll;
     display: block;
     margin: 1em;
@@ -27,4 +36,26 @@ code {
     font-size: .9rem;
     white-space: pre;
     word-wrap: normal;
+}
+
+blockquote {
+
+    margin: 0;
+
+    p {
+
+        padding: 15px;
+        background: #eee;
+        border-radius: 5px;
+
+        &::before {
+
+            content: '\201C';
+        }
+
+        &::after {
+
+            content: '\201D';
+        }
+    }
 }
