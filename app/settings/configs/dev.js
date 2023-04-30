@@ -46,7 +46,10 @@ module.exports = function createDevConfig(answer) {
           test: "/\\.(tsx?|jsx?)$/",
           loader: "'ts-loader'",
           // include: 'path.resolve(__dirname, "src")',
-          exclude: "/node_modules/"
+          exclude: "/node_modules/",
+          options: {
+            configFile: "tsconfig.json"
+          }
         },
       ],
     },

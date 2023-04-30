@@ -16,6 +16,8 @@
 <img style="width:150px;" src="https://media4.giphy.com/media/4KzpjLvJjJknJ5Xuak/giphy.gif?cid=ecf05e47t4rc89yc0kv329d4d10ga4ti7qo08pyth1w9c9c6&rid=giphy.gif" width="150"/>
 </div>
 
+# OVERVIEW
+
 This scaffold creates in seconds for you a professional environment to develop with a package of [Webpack](https://webpack.js.org/), [TypeScript](https://github.com/Microsoft/TypeScript), [Preact](https://github.com/developit/preact), [Redux-Zero](https://github.com/redux-zero/redux-zero) and [Babel](https://github.com/babel/babel). Code a application in HTML (5), SASS (CSS), TS (X) and JS (X).
 
 - Webpack (Bundler)
@@ -36,8 +38,7 @@ A total solution for your projects. You have with this scaffold the followed.
     - webpack.config.js (common)
     - webpack.dev.js (merged with webpack.config.js)
     - webpack.pro.js (merged with webpack.config.js)
-    - tsconfig.dev.js (merged with webpack.dev.js)
-    - tsconfig.pro.js (merged with webpack.pro.js)
+    - tsconfig.js (merged with webpack.dev.js & webpack.prod.js)
 - Plugins inside and ready to add more.
   - Inside Plugins:
     - [HTML Webpack Plugin](https://github.com/jantimon/html-webpack-plugin)
@@ -47,6 +48,8 @@ A total solution for your projects. You have with this scaffold the followed.
     - [Components Examples](https://preactjs.com/)
 
 More information over the [Project Structur](https://github.com/prod3v3loper/generator-webpack-preact#what-this-do)
+
+# Package Info
 
 You find generator-webpack-preact in [Yeoman generator](https://yeoman.io/generators/), [NPM](https://www.npmjs.com/) and on [Github](https://github.com/).
 
@@ -83,7 +86,7 @@ projects$ yo
 If promt a call
 
 ```bash
-? 'Hi prod3v3loper,! What would you like to do? (Use arrow keys)
+? 'Allo prod3v3loper,! What would you like to do? (Use arrow keys)
   Run a generator
 > webpack-preact
 ```
@@ -113,7 +116,7 @@ projects$ yo
 If promt a call
 
 ```bash
-? 'Hi prod3v3loper,! What would you like to do? (Use arrow keys)
+? 'Allo prod3v3loper,! What would you like to do? (Use arrow keys)
   Run a generator
 > webpack-preact
 ```
