@@ -8,28 +8,26 @@ const Generator = require("yeoman-generator");
 // const mkdirp = require( 'mkdirp' );
 // Scaffold
 // const List = require("@webpack-cli/webpack-scaffold").List;
-// const Input = require( '@webpack-cli/webpack-scaffold' ).Input;
+// const Input = require('@webpack-cli/webpack-scaffold').Input;
 // Default abstracted configs
 const createCommonConfig = require("./settings/configs/common");
 const createProConfig = require("./settings/configs/pro");
 const createDevConfig = require("./settings/configs/dev");
 
 /**
- * Webpack Scaffolding by prod3v3loper
+ * Yeoman Webpack Scaffolding by prod3v3loper
  *
  * @author      Samet Tarim aka prod3v3loper
  * @copyright   Copyright (C) 2021 Samet Tarim - All rights reserved
  * @license     MIT
- * @version     1.3.4
+ * @version     1.3.5
  * @since       1.0
  * @package     MELABUAI
- * @subpackage  Webpack Scaffold
+ * @subpackage  generator-webpack-preact
  *
  * @see         https://yeoman.io/authoring/index.html
- * @see         https://github.com/webpack/webpack-cli/blob/master/SCAFFOLDING.md
  * @see         https://github.com/evenstensberg/webpack-scaffold-demo
  * @see         https://yeoman.io/authoring/dependencies.html
- * @see         https://github.com/substack/node-mkdirp
  */
 module.exports = class WebpackGenerator extends Generator {
   /**
@@ -63,7 +61,7 @@ module.exports = class WebpackGenerator extends Generator {
     opts.env.configuration = {
       // This create the webpack.config.js
       // This property says set name webpack."config".js
-      // We create 3 config files webpack.config.js, webpack.dev.js and webpack.pro.js
+      // We create 3 config files webpack.config.js, webpack.dev.js and webpack.prod.js
       config: {
         topScope: [],
         webpackOptions: {},

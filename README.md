@@ -49,25 +49,14 @@ A total solution for your projects. You have with this scaffold the followed.
 
 More information over the [Project Structur](https://github.com/prod3v3loper/generator-webpack-preact#what-this-do)
 
-# Package Info
-
-You find generator-webpack-preact in [Yeoman generator](https://yeoman.io/generators/), [NPM](https://www.npmjs.com/) and on [Github](https://github.com/).
-
-[NPM - generator-webpack-preact](https://www.npmjs.com/package/generator-webpack-preact)
-
-[GitHub - generator-webpack-preact](https://github.com/prod3v3loper/generator-webpack-preact)
-
-[Github Theme - generator-webpack-preact](https://prod3v3loper.github.io/generator-webpack-preact/)
-
-Install in two ways, choose your favourite.
-
-# Install with npm and use with Yeoman
-
-> NPM and Yeoman
+# INSTALL
 
 1. Install [Node.js](https://nodejs.org/en/) to use the NPM (Node Package Manager), if not installed.
   - Additional you can install NVM (Node Version Manager) https://github.com/nvm-sh/nvm to change version
-2. You can use `yo` (Yeoman) to install the scaffold and start with it, also install yeoman global `npm install -g yo`.
+2. You can use `yo` (Yeoman) to install the scaffold and start with it.
+  - lso install yeoman global `npm install -g yo`.
+
+> LOCAL
 
 Switch to your projects folder.
 
@@ -99,7 +88,7 @@ projects$ yo webpack-preact
 
 Enter and create your project
 
-## Or install the generator global
+> GLOBAL
 
 To use it from everywhere install the generator global
 
@@ -129,44 +118,7 @@ projects$ yo webpack-preact
 
 Enter and create your project
 
-# Install with Git and use with Webpack
-
-> Git and Webpack
-
-Install [Git](https://git-scm.com/) to clone with it.
-Create a Scaffold Templates folder and open your Terminal, to switch in the folder.
-
-```bash
-username$ cd /Users/username/scaffold/templates/
-```
-
-Clone the repo or download to the place, you want your templates.
-
-```bash
-templates$ git clone https://github.com/prod3v3loper/generator-webpack-preact.git /Users/username/scaffold/templates/
-```
-
-And now install all Dependencies in package.json for the generator
-
-```bash
-templates$ npm install
-```
-
-Now create your main Projects folder. This folder contains all projects that we then create.
-
-Switch to the projects folder.
-
-```bash
-templates$ cd /Users/username/projects/
-```
-
-Start the scaffolding with `webpack init` the [webpack-cli init](https://github.com/webpack/webpack-cli/blob/master/packages/init/README.md#webpack-cli-init) from our scaffold templates folder with the template `generator-webpack-preact`
-
-```bash
-projects$ webpack init /Users/username/scaffold/templates/generator-webpack-preact
-```
-
-# Promt for the two solutions
+# Promt for the solution
 
 And we become a promt ;)
 
@@ -385,6 +337,16 @@ Global
 ```bash
 projects$ npm uninstall -g generator-webpack-preact
 ```
+
+# PACKAGE
+
+You find generator-webpack-preact in [Yeoman generator](https://yeoman.io/generators/), [NPM](https://www.npmjs.com/) and on [Github](https://github.com/).
+
+[NPM - generator-webpack-preact](https://www.npmjs.com/package/generator-webpack-preact)
+
+[GitHub - generator-webpack-preact](https://github.com/prod3v3loper/generator-webpack-preact)
+
+[Github Theme - generator-webpack-preact](https://prod3v3loper.github.io/generator-webpack-preact/)
 
 # Contribute
 

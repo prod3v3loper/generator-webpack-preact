@@ -1,11 +1,15 @@
-// HTML
-// import './index.html';
-// To use custom globals
-// import GLOBALS from '../global.config.json'; 
+// FRAMEWORKS
 import "./scss/style.scss"; // STYLE
 import { h, render, Component } from "preact"; // DEPENDENCIES
 import { Provider } from "redux-zero/preact"; // STORAGE
-// COMPONENT
+
+// HTML
+// import './index.html';
+
+// GLOBALS
+// import GLOBALS from '../global.config.json'; 
+
+// COMPONENTS
 import Welcome from "../components/welcome/welcome";
 
 // import store from "../components/counter/store";
@@ -15,7 +19,7 @@ import Welcome from "../components/welcome/welcome";
 
 // import Clock from "../components/clock/clock";
 
-// Create APP
+// APP
 const App = () => (
     <div id="st-wrapper">
         <div class="st-welcome">
@@ -35,11 +39,11 @@ const App = () => (
     </div>
 );
 
-// // Render all in document body
+// Render all in document body
 let ref = render( <App />, document.body );
 
 
-// HMR
+// HMR for developing local
 if ( module.hot ) {
     module.hot.accept();
     module.hot.dispose( function () {
