@@ -1,3 +1,4 @@
 node_modules
 generator-webpack-preact-*
 .DS_Store
+package-lock.json
