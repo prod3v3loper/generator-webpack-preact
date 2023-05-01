@@ -32,4 +32,4 @@ jobs:
     - run: npm i -g yo
     - run: npm link
     - run: npm link generator-webpack-preact
-    - run: yo webpack-preact
+    - run: yo webpack-preact -y
