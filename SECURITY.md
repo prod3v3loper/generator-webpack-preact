@@ -13,6 +13,4 @@ We only support the latest version.
 
 ## Reporting a Vulnerability
 
-Please use the Security section for privately reporting a [security vulnerability](https://github.com/prod3v3loper/generator-webpack-preact/security). 
-
 For more information lokk at [GitHub docs](https://docs.github.com/en/code-security/security-advisories/guidance-on-reporting-and-writing/privately-reporting-a-security-vulnerability).

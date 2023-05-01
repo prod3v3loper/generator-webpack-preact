@@ -13,24 +13,23 @@
 ![Gzipped](https://img.shields.io/bundlephobia/minzip/generator-webpack-preact.svg?style=flat "Minified & Gzipped")
 
 <div style="text-align:center; display: block;">
-<img style="width:150px;" src="https://media4.giphy.com/media/4KzpjLvJjJknJ5Xuak/giphy.gif?cid=ecf05e47t4rc89yc0kv329d4d10ga4ti7qo08pyth1w9c9c6&rid=giphy.gif" width="150"/>
+<img src="https://media4.giphy.com/media/4KzpjLvJjJknJ5Xuak/giphy.gif?cid=ecf05e47t4rc89yc0kv329d4d10ga4ti7qo08pyth1w9c9c6&rid=giphy.gif" width="300"/>
 </div>
 
 # OVERVIEW
 
-This scaffold creates in seconds for you a professional environment to develop with a package of [Webpack](https://webpack.js.org/), [TypeScript](https://github.com/Microsoft/TypeScript), [Preact](https://github.com/developit/preact), [Redux-Zero](https://github.com/redux-zero/redux-zero) and [Babel](https://github.com/babel/babel). Code a application in HTML (5), SASS (CSS), TS (X) and JS (X).
+This scaffold creates in seconds for you a professional environment. Code a application in HTML(5), (S)CSS, TS(X) and JS(X). All what you need for Apps.
 
-- Webpack (Bundler)
-- TypeScript (Code in ES6 or higher)
-- Preact (TSX and JSX)
-- Redux-Zero (Storage)
-- Babel (Compile back for Browserslist to last 2 versions or other options)
+- [Webpack](https://webpack.js.org/) (Bundler)
+- [TypeScript](https://github.com/Microsoft/TypeScript) (Code in ES6 or higher)
+- [Preact](https://github.com/developit/preact) (TSX and JSX)
+- [Redux-Zero](https://github.com/redux-zero/redux-zero) (Storage)
+- [Babel](https://github.com/babel/babel) (Compile back for Browserslist to last 2 versions or other options)
 
 A total solution for your projects. You have with this scaffold the followed.
 
-- Install with [yeoman](https://yeoman.io/) and [webpack](https://github.com/webpack/webpack-cli).
 - 5 Prompts for create the project.
-- NPM Install dependencies after scaffolding ready.
+- Automatically install dependencies after scaffolding ready.
 - Development Server with Hot Module Replacement (HMR) ready.
   - Welcome window with introduction for next steps after install.
 - Configs was splited to development and production.
@@ -51,23 +50,60 @@ More information over the [Project Structur](https://github.com/prod3v3loper/gen
 
 # INSTALL
 
-1. Install [Node.js](https://nodejs.org/en/) to use the NPM (Node Package Manager), if not installed.
-  - Additional you can install NVM (Node Version Manager) https://github.com/nvm-sh/nvm to change version
-2. You can use `yo` (Yeoman) to install the scaffold and start with it.
-  - lso install yeoman global `npm install -g yo`.
+1. Install [Node.js](https://nodejs.org/en/) to use the [NPM](https://www.npmjs.com/) (Node Package Manager), if not installed.
+  - Check your NPM version `npm -v`
+  - Additional you can install [NVM](https://github.com/nvm-sh/nvm#installing-and-updating) (Node Version Manager) to change version.
+2. We use `yo` ([Yeoman Generator](https://yeoman.io/)) to install the scaffold and start with it.
+  - Also install yeoman global `npm install -g yo`
 
-> LOCAL
+## LOCAL
 
-Switch to your projects folder.
+> To use only in your project.
+
+Switch to your projects folder, to install it in the project.
 
 ```bash
 username$ cd /Users/username/projects/
 ```
 
+And install.
+
 ```bash
 projects$ npm i generator-webpack-preact
 ```
 
+Now call yeoman.
+
+```bash
+projects$ yo
+```
+
+If promt a call
+
+```bash
+? 'Allo prod3v3loper,! What would you like to do? (Use arrow keys)
+  Run a generator
+> webpack-preact
+```
+
+or say yeoman directly the generator you want to use.
+
+```bash
+projects$ yo webpack-preact
+```
+
+Enter and create your project. You are ready to developing.
+
+## GLOBAL
+
+> To use it from everywhere install the generator global.
+
+```bash
+projects$ npm i -g generator-webpack-preact
+```
+
+No local install need anymore, you cann now call everytime everywhere `yo webpack-preact`.
+
 ```bash
 projects$ yo
 ```
@@ -86,41 +122,11 @@ or directly
 projects$ yo webpack-preact
 ```
 
-Enter and create your project
-
-> GLOBAL
-
-To use it from everywhere install the generator global
-
-```bash
-projects$ sudo npm i -g generator-webpack-preact
-```
-
-Type password and now run in everywhere in your project folders, no local install need anymore
-
-```bash
-projects$ yo
-```
-
-If promt a call
-
-```bash
-? 'Allo prod3v3loper,! What would you like to do? (Use arrow keys)
-  Run a generator
-> webpack-preact
-```
-
-or directly
-
-```bash
-projects$ yo webpack-preact
-```
-
-Enter and create your project
+Enter and create your project. You are ready to developing.
 
 # Promt for the solution
 
-And we become a promt ;)
+And we become a promt, after choose our generator `webpack preact` ;)
 
 ```bash
 ? Customer name? (customer)
@@ -130,7 +136,7 @@ And we become a promt ;)
 ? Want you install all dependencies? Y/n
 ```
 
-After answer all questions start the create
+After answerring all questions, start the create process.
 
 ```bash
    create src/index.tsx
@@ -214,7 +220,7 @@ Projects
 
 ```
 
-# Usage
+# USAGE
 
 Now run and see the Magic :)
 
@@ -245,9 +251,11 @@ newsletter$ npm run prod
 To close (stop the localhost server) the NPM run type in console (Terminal):
 Ctrl + C
 
-## Create a new Component
+# COMPONENTS
 
-### Images and Videos
+Create your own components, or request a feature issue. Here two samples.
+
+## Images or Videos
 
 Import your sass or css files in easy way.
 Import all your images and videos.
@@ -338,6 +346,23 @@ Global
 projects$ npm uninstall -g generator-webpack-preact
 ```
 
+# ISSUE
+
+Please use the issue tab to request a:
+
+* Bug
+* Feature
+
+Choose template and report [issues](https://github.com/prod3v3loper/generator-webpack-preact/issues).
+
+# CONTRIBUTE
+
+Please read the [contributing](https://github.com/prod3v3loper/generator-webpack-preact/blob/master/CONTRIBUTING.md) to contribute.
+
+# VULNERABILITY
+
+Please use the Security section for privately reporting a [vulnerability](https://github.com/prod3v3loper/generator-webpack-preact/security).
+
 # PACKAGE
 
 You find generator-webpack-preact in [Yeoman generator](https://yeoman.io/generators/), [NPM](https://www.npmjs.com/) and on [Github](https://github.com/).
@@ -348,18 +373,14 @@ You find generator-webpack-preact in [Yeoman generator](https://yeoman.io/genera
 
 [Github Theme - generator-webpack-preact](https://prod3v3loper.github.io/generator-webpack-preact/)
 
-# Contribute
+# AUTHOR
 
-Please read the [contributing](https://github.com/prod3v3loper/generator-webpack-preact/blob/master/CONTRIBUTING.md).
+[prod3v3loper](https://www.prod3v3loper.com)
 
-# Authors
-
-**[Samet Tarim](https://www.prod3v3loper.com)** - _All works_
-
-# Support
+# SUPPORT
 
 [Hyperly](https://www.hyperly.de)
 
-# License
+# LICENSE
 
-[MIT](https://github.com/prod3v3loper/generator-webpack-preact/blob/master/LICENSE) - [prod3v3loper](https://www.tnado.com/author/prod3v3loper/)
+[MIT](https://github.com/prod3v3loper/generator-webpack-preact/blob/master/LICENSE)
