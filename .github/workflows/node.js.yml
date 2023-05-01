@@ -29,3 +29,6 @@ jobs:
     - run: npm i
     - run: npm run prod --if-present
     - run: npm test
+    - run: npm link
+    - run: npm link generator-webpack-preact
+    - run: npm yo webpack-preact -y
