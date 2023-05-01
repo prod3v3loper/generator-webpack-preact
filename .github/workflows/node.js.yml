@@ -31,4 +31,4 @@ jobs:
     - run: npm test
     - run: npm link
     - run: npm link generator-webpack-preact
-    - run: npm yo webpack-preact -y
+    - run: yo webpack-preact -y
