@@ -1,5 +1,6 @@
 # 📦 Generator Webpack Preact
 
+![workflow](https://github.com/prod3v3loper/generator-webpack-preact/actions/workflows/node.js.yml/badge.svg)
 ![Language](https://img.shields.io/github/languages/top/prod3v3loper/generator-webpack-preact.svg?style=flat "Language")
 [![NPM Version](https://img.shields.io/npm/v/generator-webpack-preact.svg?style=flat "NPM Version")](https://www.npmjs.com/package/generator-webpack-preact)
 [![NPM Donwloads](https://img.shields.io/npm/dw/generator-webpack-preact.svg?style=flat "NPM Donwloads")](https://www.npmjs.com/package/generator-webpack-preact)
@@ -357,7 +358,7 @@ Choose template and report [issues](https://github.com/prod3v3loper/generator-we
 
 # CONTRIBUTE
 
-Please read the [contributing](https://github.com/prod3v3loper/generator-webpack-preact/blob/master/CONTRIBUTING.md) to contribute.
+Please read the [contributing](https://github.com/prod3v3loper/generator-webpack-preact/blob/master/.github/CONTRIBUTING.md) to contribute.
 
 # VULNERABILITY
 
