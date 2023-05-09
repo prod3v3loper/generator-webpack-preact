@@ -1,3 +1,30 @@
+* {
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+h1 {
+
+    margin-bottom: 20px;
+}
+
+p {
+
+    margin-bottom: 20px;
+}
+
+ul {
+
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
 #st-wrapper {
 
     overflow: hidden;
@@ -28,7 +55,7 @@ code {
     overflow: scroll;
     display: block;
     margin: 1em;
-    padding: 2em;
+    padding: 10px 0;
     border-radius: 4px;
     background-color: black;
     color: #E3CEAB;
@@ -36,6 +63,7 @@ code {
     font-size: .9rem;
     white-space: pre;
     word-wrap: normal;
+    text-align: left;
 }
 
 blockquote {

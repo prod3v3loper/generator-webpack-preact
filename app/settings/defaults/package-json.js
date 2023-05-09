@@ -7,21 +7,21 @@
 
 module.exports = function createPackageJson(answer) {
   const pkgJsonConf = {
-    name: answer.name ? answer.name : "generator-webpack-scaffold-pro",
+    name: answer.name ? answer.name : "generator-webpack-preact",
     description: answer.description
       ? "'" + answer.description + "'"
       : "This is a Webpack Scaffolding in pro style with separated configs and better understandable in complex environments.",
     version: answer.version ? "'" + answer.version + "'" : "1.0.0",
     author: answer.author
       ? "'" + answer.author + "'"
-      : "Samet Tarim aka prod3v3loper",
+      : "prod3v3loper",
     private: answer.private ? "'" + answer.private + "'" : true,
-    keywords: answer.keywords ? answer.keywords : ["yeoman-generator"],
+    keywords: answer.keywords ? answer.keywords : ["generator-webpack-preact"],
     license: answer.license ? "'" + answer.license + "'" : "MIT License",
     // @see https://docs.npmjs.com/files/package.json#people-fields-author-contributors
     // contributors: [
     //   {
-    //     name: "Samet Tarim",
+    //     name: "",
     //     email: "",
     //     url: "",
     //   },
@@ -40,6 +40,7 @@ module.exports = function createPackageJson(answer) {
     scripts: {
       dev: "webpack serve --open --config webpack.dev.js",
       prod: "webpack --config webpack.prod.js",
+      watch: "npx webpack watch --mode development"
     },
     devDependencies: {
       "webpack": "^5.81.0",

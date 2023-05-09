@@ -13,9 +13,7 @@
 ![Minified](https://img.shields.io/bundlephobia/min/generator-webpack-preact.svg?style=flat "Minified")
 ![Gzipped](https://img.shields.io/bundlephobia/minzip/generator-webpack-preact.svg?style=flat "Minified & Gzipped")
 
-<div style="text-align:center; display: block;">
 <img src="https://media4.giphy.com/media/4KzpjLvJjJknJ5Xuak/giphy.gif?cid=ecf05e47t4rc89yc0kv329d4d10ga4ti7qo08pyth1w9c9c6&rid=giphy.gif" width="300"/>
-</div>
 
 # OVERVIEW
 
@@ -26,6 +24,8 @@ This scaffold creates in seconds for you a professional environment. Code a appl
 - [Preact](https://github.com/developit/preact) (TSX and JSX)
 - [Redux-Zero](https://github.com/redux-zero/redux-zero) (Storage)
 - [Babel](https://github.com/babel/babel) (Compile back for Browserslist to last 2 versions or other options)
+
+<img src="img/structure.png">
 
 A total solution for your projects. You have with this scaffold the followed.
 
@@ -354,7 +354,7 @@ Please use the issue tab to request a:
 * Bug
 * Feature
 
-Choose template and report [issues](https://github.com/prod3v3loper/generator-webpack-preact/issues).
+Choose template and report a bug or feature you want [issues](https://github.com/prod3v3loper/generator-webpack-preact/issues).
 
 # CONTRIBUTE
 

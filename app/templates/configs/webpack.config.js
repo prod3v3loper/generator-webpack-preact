@@ -2,9 +2,13 @@ const path = require("path");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
+/**
+ * Thats your Webpack common config file
+ */
 module.exports = {
+
 	entry: {
-		index: "./src/index.jsx"
+		index: "./src/index.tsx"
 	},
 
 	output: {
@@ -19,9 +23,9 @@ module.exports = {
 	plugins: [
 		new CleanWebpackPlugin(),
 		new HtmlWebpackPlugin({
-			title: "WebPack - Preact",
+			title: "Webpack - Preact",
 			template: "./public/index.html",
-			inlineSource: ".(js|css)$",
+			inlineSource: ".(jsx?|s?css)$",
 			minify: {
 				collapseWhitespace: true,
 				removeComments: true
@@ -46,9 +50,9 @@ module.exports = {
 				]
 			},
 			{
-			 	test: /\.(png|svg|jpg|gif|mp4)$/,
+				test: /\.(png|svg|jpg|gif|mp4)$/,
 				use: [
-					'file-loader'
+					"file-loader"
 				]
 			}
 		]

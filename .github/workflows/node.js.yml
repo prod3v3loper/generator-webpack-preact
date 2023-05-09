@@ -6,8 +6,6 @@ name: Node.js CI
 on:
   push:
     branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]
 
 jobs:
 
@@ -18,38 +16,6 @@ jobs:
     strategy:
       matrix:
         node-version: [18.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-
-    steps:
-    - uses: actions/checkout@v3
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
-      with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
-    - name: Install dependencies
-      run: npm i
-    - name: Build if prod present
-      run: npm run prod --if-present
-    - name: Run test for index.js
-      run: npm test
-    - name: Install yeoman global
-      run: npm i -g yo
-    - name: Link generator-webpack-preact
-      run: npm link
-    - name: Add generator-webpack-preact to node_modules
-      run: npm link generator-webpack-preact
-    - name: Use generator-webpack-preact
-      run: yo webpack-preact
-
-  Run-npm-on-Macos:
-
-    runs-on: macos-latest
-
-    strategy:
-      matrix:
-        node-version: [18.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
     - uses: actions/checkout@v3

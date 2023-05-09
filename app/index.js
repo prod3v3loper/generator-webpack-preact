@@ -2,6 +2,8 @@
 const createGLOBALSjson = require("./settings/defaults/global");
 const createPackageJson = require("./settings/defaults/package-json");
 const createTsconfig = require("./settings/defaults/tsconfig-json");
+const createBabelJson = require("./settings/defaults/babel-json");
+const createComposerJson = require("./settings/defaults/composer-json");
 // Yeoman
 const Generator = require("yeoman-generator");
 // Helper for create empty folders
@@ -15,12 +17,12 @@ const createProConfig = require("./settings/configs/pro");
 const createDevConfig = require("./settings/configs/dev");
 
 /**
- * Yeoman Webpack Scaffolding by prod3v3loper
+ * Yeoman Webpack Scaffolding
  *
- * @author      Samet Tarim aka prod3v3loper
- * @copyright   Copyright (C) 2021 Samet Tarim - All rights reserved
+ * @author      prod3v3loper
+ * @copyright   Copyright (C) 2021 prod3v3loper - All rights reserved
  * @license     MIT
- * @version     1.3.6
+ * @version     1.3.7
  * @since       1.0
  * @package     MELABUAI
  * @subpackage  generator-webpack-preact
@@ -215,6 +217,16 @@ module.exports = class WebpackGenerator extends Generator {
       createTsconfig(this.answers)
     );
 
+    this.fs.extendJSON(
+      this.destinationPath("babel.config.json"),
+      createBabelJson(this.answers)
+    );
+
+    this.fs.extendJSON(
+      this.destinationPath("composer.json"),
+      createComposerJson(this.answers)
+    );
+
     // Used components
     if (
       (this.comps && this.comps.indexOf(", ") > -1) ||
@@ -227,7 +239,7 @@ module.exports = class WebpackGenerator extends Generator {
         // Copy tpls
         this.fs.copyTpl(
           this.templatePath("components/" + array[i]),
-          this.destinationPath("components/" + array[i])
+          this.destinationPath("src/components/" + array[i])
         );
       }
     } else if (this.comps) {
@@ -235,16 +247,16 @@ module.exports = class WebpackGenerator extends Generator {
       // Copy tpls
       this.fs.copyTpl(
         this.templatePath("components/welcome"),
-        this.destinationPath("components/welcome")
+        this.destinationPath("src/components/welcome")
       );
       this.fs.copyTpl(
         this.templatePath("components/" + this.comps),
-        this.destinationPath("components/" + this.comps)
+        this.destinationPath("src/components/" + this.comps)
       );
     } else {
       this.fs.copyTpl(
         this.templatePath("components/welcome"),
-        this.destinationPath("components/welcome")
+        this.destinationPath("src/components/welcome")
       );
     }
 

@@ -28,25 +28,15 @@ const App = () => (
             <Provider store={store}>
                 <Counter />
             </Provider>
-        </div> */}
-        {/* <div class="st-todolist">
+        </div>
+        <div class="st-todolist">
             <TodoList />
-        </div> */}
-        {/* <div class="st-clock">
+        </div>
+        <div class="st-clock">
             <Clock />
         </div> */}
     </div>
 );
 
 // Render all in document body
-let ref = render(<App />, document.body);
-
-
-// HMR for developing local
-if (module.hot) {
-    module.hot.accept();
-    module.hot.dispose(function () {
-        // Clean document for refresh
-        render(null, document.body, ref);
-    });
-}
+render(<App />, document.body);

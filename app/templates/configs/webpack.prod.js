@@ -2,7 +2,13 @@ const path = require("path");
 const { merge } = require("webpack-merge");
 const common = require("./webpack.config.js");
 
+/**
+ * Thats your production config
+ * 
+ * $ npx webpack --config webpack.prod.js
+ */
 module.exports = merge(common, {
+
 	mode: "production",
 
 	optimization: {
@@ -34,7 +40,7 @@ module.exports = merge(common, {
 						"@babel/plugin-proposal-object-rest-spread",
 						"@babel/plugin-proposal-class-properties",
 						[
-							"@babel/plugin-transform-react-jsx", { "pragma":"h" }
+							"@babel/plugin-transform-react-jsx", { "pragma": "h" }
 						]
 					]
 				}
@@ -43,7 +49,7 @@ module.exports = merge(common, {
 				test: /\.(tsx?|jsx?)$/,
 				loader: "ts-loader",
 				// include: 'path.resolve(__dirname, "src")',
-                exclude: /node_modules/,
+				exclude: /node_modules/,
 				options: {
 					configFile: "tsconfig.json"
 				}
