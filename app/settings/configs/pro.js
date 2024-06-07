@@ -2,9 +2,9 @@
  * webpack.pro.js
  */
 // Get the pro plugins
-// const proPlugins = require("../plugins/pro");
+import proPlugins from "../plugins/pro.js";
 
-module.exports = function createProConfig(answer) {
+export default function createProConfig(answer) {
   let proConf = {
     mode: "'production'",
     optimization: {

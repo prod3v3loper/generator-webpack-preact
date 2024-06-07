@@ -1,8 +1,9 @@
 {
   "name": "generator-webpack-preact",
   "description": "Create professional projects and manage, in environment with: Webpack, TypeScript, Preact, Redux-Zero and Babel. HTML(5), (S)CSS, TS(X) and JS(X). All what you need for Apps. By prod3v3loper",
-  "version": "1.3.7",
+  "version": "1.4.0",
   "main": "./app/index.js",
+  "type": "module",
   "scripts": {
     "test": "node ./app/index.js"
   },
@@ -11,7 +12,7 @@
   ],
   "dependencies": {
     "@webpack-cli/webpack-scaffold": "^1.0.3",
-    "yeoman-generator": "^5.8.0"
+    "yeoman-generator": "^7.2.0"
   },
   "repository": {
     "type": "git",
@@ -38,5 +39,5 @@
   "bugs": {
     "url": "https://github.com/prod3v3loper/generator-webpack-preact/issues"
   },
-  "homepage": "https://www.npmjs.com/package/generator-webpack-preact"
+  "homepage": "https://www.prod3v3loper.com"
 }

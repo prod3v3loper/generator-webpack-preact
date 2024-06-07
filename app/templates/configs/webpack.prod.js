@@ -1,13 +1,18 @@
-const path = require("path");
-const { merge } = require("webpack-merge");
-const common = require("./webpack.config.js");
+import path from "path";
+import { fileURLToPath } from "url";
+import { merge } from "webpack-merge";
+import common from "./webpack.config.js";
+
+// Simuliere __dirname in ES-Modulen
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 /**
  * Thats your production config
  * 
  * $ npx webpack --config webpack.prod.js
  */
-module.exports = merge(common, {
+export default merge(common, {
 
 	mode: "production",
 

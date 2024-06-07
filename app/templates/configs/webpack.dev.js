@@ -1,14 +1,19 @@
-const path = require("path");
-const webpack = require("webpack");
-const { merge } = require("webpack-merge");
-const common = require("./webpack.config.js");
+import path from "path";
+import { fileURLToPath } from "url";
+import webpack from "webpack";
+import { merge } from "webpack-merge";
+import common from "./webpack.config.js";
+
+// Simuliere __dirname in ES-Modulen
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 /**
  * Thts your development config with hotmodule page reload
  * 
  * npx webpack serve --config webpack.dev.js
  */
-module.exports = merge(common, {
+export default merge(common, {
 
 	mode: "development",
 

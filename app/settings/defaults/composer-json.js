@@ -1,6 +1,6 @@
 
 
-module.exports = function createComposerJson(answer) {
+export default function createComposerJson(answer) {
     const composerJsonConf = {
         // "autoload": {
         //     "psr-4": { "": "src/" }

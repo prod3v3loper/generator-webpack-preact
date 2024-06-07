@@ -2,9 +2,9 @@
  * webpack.config.js
  */
 // Get the dev plugins
-const comPlugins = require("../plugins/common");
+import comPlugins from "../plugins/common.js";
 
-module.exports = function createComConfig(answer) {
+export default function createComConfig(answer) {
   let comConf = {
     entry: {
       index: answer.entry ? "'" + answer.entry + "'" : "'./src/index.jsx'",

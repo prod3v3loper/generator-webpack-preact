@@ -1,7 +1,7 @@
 
 
 // babel.config.json
-module.exports = function createBabelJson(answer) {
+export default function createBabelJson(answer) {
     const babelJsonConf = {
         // Example, we have our config for that in webpack config
         // "targets": {

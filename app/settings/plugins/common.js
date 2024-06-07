@@ -5,7 +5,7 @@
  * @see     https://github.com/jantimon/html-webpack-plugin#minification
  */
 
-module.exports = function commonPlugins(answer) {
+export default function commonPlugins(answer) {
   return [
     /**
       * All files inside webpack's output.path directory will be removed once, but the

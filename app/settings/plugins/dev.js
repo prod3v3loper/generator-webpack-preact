@@ -4,6 +4,6 @@
  * To do this you add in generator.js to topScopes your plugin
  */
 
-module.exports = function devPlugins(answer) {
+export default function devPlugins(answer) {
   return ["new webpack.HotModuleReplacementPlugin()"];
 };

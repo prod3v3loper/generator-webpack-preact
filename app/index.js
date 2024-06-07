@@ -1,20 +1,19 @@
 // DEFAULTS
-const createGLOBALSjson = require("./settings/defaults/global");
-const createPackageJson = require("./settings/defaults/package-json");
-const createTsconfig = require("./settings/defaults/tsconfig-json");
-const createBabelJson = require("./settings/defaults/babel-json");
-const createComposerJson = require("./settings/defaults/composer-json");
+import createGLOBALSjson from "./settings/defaults/global.js";
+import createPackageJson from "./settings/defaults/package-json.js";
+import createTsconfig from "./settings/defaults/tsconfig-json.js";
+import createBabelJson from "./settings/defaults/babel-json.js";
+import createComposerJson from "./settings/defaults/composer-json.js";
 // Yeoman
-const Generator = require("yeoman-generator");
+import Generator from "yeoman-generator";
 // Helper for create empty folders
-// const mkdirp = require( 'mkdirp' );
+// import mkdirp from 'mkdirp';
 // Scaffold
-// const List = require("@webpack-cli/webpack-scaffold").List;
-// const Input = require('@webpack-cli/webpack-scaffold').Input;
+// import { List, Input } from "@webpack-cli/webpack-scaffold";
 // Default abstracted configs
-const createCommonConfig = require("./settings/configs/common");
-const createProConfig = require("./settings/configs/pro");
-const createDevConfig = require("./settings/configs/dev");
+import createCommonConfig from "./settings/configs/common.js";
+import createProConfig from "./settings/configs/pro.js";
+import createDevConfig from "./settings/configs/dev.js";
 
 /**
  * Yeoman Webpack Scaffolding
@@ -22,16 +21,17 @@ const createDevConfig = require("./settings/configs/dev");
  * @author      prod3v3loper
  * @copyright   Copyright (C) 2021 prod3v3loper - All rights reserved
  * @license     MIT
- * @version     1.3.7
- * @since       1.0
+ * @version     1.4.0
+ * @since       1.0.0
  * @package     MELABUAI
  * @subpackage  generator-webpack-preact
+ * @link        https://www.prod3v3loper.com
  *
  * @see         https://yeoman.io/authoring/index.html
  * @see         https://github.com/evenstensberg/webpack-scaffold-demo
  * @see         https://yeoman.io/authoring/dependencies.html
  */
-module.exports = class WebpackGenerator extends Generator {
+export default class WebpackGenerator extends Generator {
   /**
    * Constructor
    *
@@ -60,6 +60,7 @@ module.exports = class WebpackGenerator extends Generator {
     // And you can then access it later; e.g.
     // this.log(this.options.name);
 
+    opts.env = opts.env || {};
     opts.env.configuration = {
       // This create the webpack.config.js
       // This property says set name webpack."config".js
@@ -80,6 +81,8 @@ module.exports = class WebpackGenerator extends Generator {
         configName: "",
       },
     };
+
+    this.options.env = opts.env;
   }
 
   /**

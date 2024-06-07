@@ -4,6 +4,6 @@
  * To do this you add in generator.js to topScopes your plugin
  */
 
-module.exports = function proPlugins(answer) {
+export default function proPlugins(answer) {
   return [""];
 };

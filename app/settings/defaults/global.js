@@ -2,7 +2,7 @@
  * Extra config file, for Base and Globals
  */
 
-module.exports = function createGlobalJson(answer) {
+export default function createGlobalJson(answer) {
   let globalJsonConf = {
     baseURL: "https://www.prod3v3loper.com",
     logoURL: "",
