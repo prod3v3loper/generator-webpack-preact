@@ -1,38 +1,71 @@
----
-name: Bug report
-about: Create a report to help us improve
-title: ''
-labels: ''
-assignees: ''
+name: Bug Report
+description: Report a bug
+title: "[Bug]: "
+labels: ["bug", "triage"]
 
----
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
 
-**Describe the bug**
-A clear and concise description of what the bug is.
+  - type: input
+    attributes:
+      label: Contact Details
+      description: |
+        How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: false
 
-**To Reproduce**
-Steps to reproduce the behavior:
-1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
+  - type: textarea
+    attributes:
+      label: What happened?
+      description: |
+        Also tell us, what did you expect to happen?
+      placeholder: A bug happened! Tell us what happend?
+    validations:
+      required: true
 
-**Expected behavior**
-A clear and concise description of what you expected to happen.
+  - type: textarea
+    attributes:
+      label: Steps to reproduce the behavior!
+      description: |
+        A clear and concise description of what you expected to happen.
+      value: "1. Go to '...'
+        2. Click on '....'
+        3. Scroll down to '....'
+        4. See error"
+    validations:
+      required: true
 
-**Screenshots**
-If applicable, add screenshots to help explain your problem.
+  - type: textarea
+    attributes:
+      label: Device and information
+      description: |
+        A description of your device and their informations
+      value: "- OS: [e.g. iOS]
+        - Browser [e.g. chrome, safari]
+        - Version [e.g. 22]
+        - Device: [e.g. iPhone6]"
+    validations:
+      required: true
 
-**Desktop (please complete the following information):**
- - OS: [e.g. iOS]
- - Browser [e.g. chrome, safari]
- - Version [e.g. 22]
+  - type: textarea
+    attributes:
+      label: Relevant log output
+      description: |
+        Please copy and paste any relevant log output. 
+        This will be automatically formatted into code, so no need for backticks.
+      render: bash
+    validations:
+      required: false
 
-**Smartphone (please complete the following information):**
- - Device: [e.g. iPhone6]
- - OS: [e.g. iOS8.1]
- - Browser [e.g. stock browser, safari]
- - Version [e.g. 22]
-
-**Additional context**
-Add any other context about the problem here.
+  - type: checkboxes
+    attributes:
+      label: Code of Conduct
+      description: |
+        By submitting this issue, you agree to follow our [Code of Conduct](https://github.com/prod3v3loper/generator-webpack-preact/blob/main/.github/CODE_OF_CONDUCT.md)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
